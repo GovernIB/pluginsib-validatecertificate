@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 import org.fundaciobit.plugins.certificate.ICertificatePlugin;
 import org.fundaciobit.plugins.certificate.InformacioCertificat;
 import org.fundaciobit.plugins.certificate.ResultatValidacio;
-import org.fundaciobit.plugins.utils.CertificateUtils;
+import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
 
 /**
  *

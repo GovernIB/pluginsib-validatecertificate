@@ -2,7 +2,7 @@ package org.fundaciobit.plugins.certificate;
 
 import java.security.cert.X509Certificate;
 
-import org.fundaciobit.plugins.IPlugin;
+import org.fundaciobit.pluginsib.core.IPlugin;
 
 /**
  * Interface que mostrar els mètodes que hauria de tenir el 

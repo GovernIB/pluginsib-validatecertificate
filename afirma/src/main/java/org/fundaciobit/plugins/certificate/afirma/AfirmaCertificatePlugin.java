@@ -7,7 +7,7 @@ import java.security.cert.X509Certificate;
 import org.apache.log4j.Logger;
 import org.fundaciobit.plugins.certificate.ICertificatePlugin;
 import org.fundaciobit.plugins.certificate.ResultatValidacio;
-import org.fundaciobit.plugins.utils.AbstractPluginProperties;
+import org.fundaciobit.pluginsib.core.utils.AbstractPluginProperties;
 
 /**
  * 

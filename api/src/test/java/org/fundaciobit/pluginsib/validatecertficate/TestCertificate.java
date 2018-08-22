@@ -1,4 +1,4 @@
-package org.fundaciobit.plugins.test;
+package org.fundaciobit.pluginsib.validatecertficate;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ import java.security.cert.X509Certificate;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.fundaciobit.plugins.utils.CertificateUtils;
+import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
 
 
 /**
@@ -16,7 +16,7 @@ import org.fundaciobit.plugins.utils.CertificateUtils;
  * @author anadal
  *
  */
-public class TestCertificate extends TestUtils {
+public class TestCertificate extends org.fundaciobit.pluginsib.validatecertficate.TestUtils {
 
   public static Logger log = Logger.getLogger(TestCertificate.class);
 
