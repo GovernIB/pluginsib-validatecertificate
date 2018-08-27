@@ -6,7 +6,7 @@
 	<groupId>org.fundaciobit.pluginsib.validatecertificate</groupId>
 	<artifactId>pluginsib-validatecertificate-api</artifactId>
 	<version>2.0.0</version>
-	<name>PluginsIB - ValidateCertificate - API</name>
+	<name>PluginsIB - Validate Certificate - API</name>
 	<parent>
 		<groupId>org.fundaciobit.pluginsib.validatecertificate</groupId>
 		<artifactId>pluginsib-validatecertificate</artifactId>

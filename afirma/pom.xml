@@ -5,7 +5,7 @@
   <artifactId>pluginsib-validatecertificate-afirma</artifactId>
   <packaging>jar</packaging>
   <version>2.0.0</version>
-  <name>PluginsIB - Certificate - @Firma</name>
+  <name>PluginsIB - Validate Certificate - @Firma</name>
   <parent>
     <groupId>org.fundaciobit.pluginsib.validatecertificate</groupId>
     <artifactId>pluginsib-validatecertificate</artifactId>
