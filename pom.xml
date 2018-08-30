@@ -18,13 +18,13 @@
       <artifactId>pluginsib-core</artifactId>
       <version>2.0.0</version>
     </dependency>
-    <dependency>
+    <!-- XYZ<dependency>
       <groupId>org.fundaciobit.pluginsib.core</groupId>
       <artifactId>pluginsib-core</artifactId>
       <version>2.0.0</version>
       <type>test-jar</type>
       <scope>test</scope>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -57,7 +57,7 @@
     <repository>
       <id>github-governib-maven-repos</id>
       <name>GitHub GovernIB Maven Repository</name>
-      <url>http://GovernIB.github.io/maven/maven/</url>
+      <url>https://governib.github.io/maven/maven/</url>
     </repository>
   </repositories>
   <build>

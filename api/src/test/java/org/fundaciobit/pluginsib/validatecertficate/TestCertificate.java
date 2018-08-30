@@ -8,6 +8,7 @@ import java.security.cert.X509Certificate;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.fundaciobit.pluginsib.core.test.TestUtils;
 import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
 
 
@@ -16,7 +17,7 @@ import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
  * @author anadal
  *
  */
-public class TestCertificate extends org.fundaciobit.pluginsib.validatecertficate.TestUtils {
+public class TestCertificate extends TestUtils {
 
   public static Logger log = Logger.getLogger(TestCertificate.class);
 
