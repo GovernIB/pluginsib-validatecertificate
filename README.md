@@ -1,11 +1,14 @@
 # ![Logo](https://github.com/GovernIB/maven/raw/binaris/pluginsib/projectinfo_Attachments/icon.jpg) pluginsib-validatecertificate  (pluginsib-2.0)
 *Plugin de validació de certificats digitals*
 
+***Versions***
+
+> - Versió Estable: -
+> - Versió en Desenvolupament: __pluginsib-core-2.0__ (branca [pluginsib-core-2.0](../../tree/pluginsib-core-2.0))
+
 **Descripció**
 
 Plugin de validació de certificats digitals.
-
-La versió actual d'aquest plugin és la [pluginsib-validatecertificate-2.0](https://github.com/GovernIB/pluginsib-validatecertificate/tree/pluginsib-validatecertificate-2.0).
 
 ***Documentació***
 
