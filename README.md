@@ -11,7 +11,7 @@ Directori | Descripció | Documentació
 
 Directori | Descripció | Documentació
 ------------ | ------------- | -------------
-api | Interficie de programació del plugin | --
+api | API de validatecertificate | --
 afirma | Validació de certificats amb servidors de @Frima | -- 
 afirmacxf | Validació de certificats amb servidors de @Frima emprant CXF | --
 fake | Implementació buida | --
