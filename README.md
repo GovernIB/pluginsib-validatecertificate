@@ -12,7 +12,7 @@ Plugin de validació de certificats digitals.
 
 ***Documentació***
 
-[Documentació branca estable](../../tree/pluginsib-validatecertificate-2.0#documentaci%C3%B3)
+[Documentació de branca](../../tree/pluginsib-validatecertificate-2.0#documentaci%C3%B3)
 
 **Enllaços**
 
