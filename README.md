@@ -5,6 +5,6 @@
 
 Directori | Descripció | Documentació
 ------------ | ------------- | -------------
-afirma | -- | -- 
-afirmacxf | -- | --
-fake | -- | --
+afirma | Validació de certificats amb servidors de @Frima | -- 
+afirmacxf | Validació de certificats amb servidors de @Frima emprant CXF | --
+fake | Implementació buida | --
