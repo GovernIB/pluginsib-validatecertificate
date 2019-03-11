@@ -8,3 +8,9 @@ Directori | Descripció | Documentació
 afirma | Validació de certificats amb servidors de @Frima | -- 
 afirmacxf | Validació de certificats amb servidors de @Frima emprant CXF | --
 fake | Implementació buida | --
+
+#### ***Documentació***
+
+Directori | Descripció | Documentació
+------------ | ------------- | -------------
+------------ | ------------- | -------------
