@@ -1,0 +1,24 @@
+
+
+# PLUGIN CLASS
+# org.fundaciobit.plugins.certificate.afirmacxf.AfirmaCxfCertificatePlugin
+
+# MODE_VALIDACIO_SIMPLE = 0;
+# MODE_VALIDACIO_AMB_REVOCACIO = 1;
+# MODE_VALIDACIO_CADENA = 2;      
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.validationmode=1
+  
+#org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.endpoint=http://afirma.redsara.es/afirmaws/services/
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.endpoint=http://des-afirma.redsara.es/afirmaws/services/
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.applicationid=gobbal.fbit.portafib
+
+# USERNAME-PASSWORD Token
+#org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.username=
+#org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.password=
+
+# CERTIFICATE Token
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.ks.path=D:/dades/dades/CarpetesPersonals/Programacio/portafib-files/afirma/nou/proves-dgidt.jks
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.ks.type=JKS
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.ks.password=mypass
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.ks.cert.alias=1
+org.fundaciobit.validatecertificate.1.plugins.certificate.afirma.authorization.ks.cert.password=certpass

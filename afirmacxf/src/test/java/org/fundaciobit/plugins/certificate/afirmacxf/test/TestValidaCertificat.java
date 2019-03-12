@@ -4,9 +4,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.cert.X509Certificate;
+import java.util.Properties;
 
+import org.fundaciobit.plugins.certificate.ICertificatePlugin;
 import org.fundaciobit.plugins.certificate.ResultatValidacio;
-import org.fundaciobit.plugins.certificate.afirmacxf.ValidaCertificat;
+import org.fundaciobit.plugins.certificate.afirmacxf.AfirmaCxfCertificatePlugin;
+import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
+import org.fundaciobit.pluginsib.core.utils.FileUtils;
+import org.fundaciobit.pluginsib.core.utils.PluginsManager;
 
 /**
  * 
@@ -16,79 +22,34 @@ import org.fundaciobit.plugins.certificate.afirmacxf.ValidaCertificat;
 public class TestValidaCertificat {
 
   public static void main(String[] args) {
-    String endPoint = "http://des-afirma.redsara.es/afirmaws/services/ValidarCertificado";
-    testCertWithCertificateLogin(endPoint);
-    testCertWithUsrPwdLogin(endPoint);
+       
+    testValidateCertificate();
+
   }
 
-  public static void testCertWithCertificateLogin(String endPoint) {
+  public static void testValidateCertificate() {
     try {
+
+      final String basePropertiesKey = "org.fundaciobit.validatecertificate.1.";
+      Properties testProp = FileUtils.readPropertiesFromFile(new File("test.properties"));
+      Properties pluginProp = FileUtils.readPropertiesFromFile(new File("config.properties"));
       
+      File pkcs7 = new File(testProp.getProperty("certificate.file"));
+      //byte[] data = getBytesFromFile(pkcs7);
 
-      String keystoreLocation = "keystore.jks"; // <= Add here
+      X509Certificate certificat = CertificateUtils.decodeCertificate(new FileInputStream(pkcs7));
+      
+      
+      Class<?> c = AfirmaCxfCertificatePlugin.class;
+      
+      ICertificatePlugin plugin = (ICertificatePlugin)PluginsManager.instancePluginByClass(c, basePropertiesKey, pluginProp);
 
-      System.out.println("FILE EXISTS = " + new File(keystoreLocation).exists());
-      // .jks for type "JKS",
-      // .p12 or .pfx for type "PKCS12"
-
-      String keystoreType = "jks";
-      String keystorePassword = ""; // <= Add here
-      String keystoreCertAlias = ""; // <= Add here
-      String keystoreCertPassword = ""; // <= Add here
-
-      String aplicacioId = ""; // <= Add here
-
-      File base = new File("C:\\Documents and Settings\\anadal\\Escritorio\\certificats\\");
-      File pkcs7 = new File(base, "anadal_caib.cer");
-      byte[] data = getBytesFromFile(pkcs7);
-
-      int modeValidacio = ValidaCertificat.MODE_VALIDACIO_AMB_REVOCACIO;
-      // int modeValidacio = ValidaCertificat.MODE_VALIDACIO_CADENA;
-      // int modeValidacio = ValidaCertificat.MODE_VALIDACIO_SIMPLE;
-
-      ValidaCertificat vc = new ValidaCertificat(endPoint, aplicacioId, modeValidacio,
-          keystoreLocation, keystoreType, keystorePassword, keystoreCertAlias,
-          keystoreCertPassword);
-
-      boolean obtenirDadesCertificat = false;
-      ResultatValidacio rv = vc.validar(data, obtenirDadesCertificat);
+      ResultatValidacio rv = plugin.getInfoCertificate(certificat);
 
       System.out.println(" =============== OK ================");
       System.out.println(rv.toString());
 
     } catch (Exception e) {
-      e.printStackTrace();
-    }
-
-  }
-
-  public static void testCertWithUsrPwdLogin(String endPoint) {
-    try {
-      String username = ""; // <= Add here
-      String password = ""; // <= Add here
-      String aplicacioId = ""; // <= Add here
-
-      File base = new File("C:\\Documents and Settings\\anadal\\Escritorio\\certificats\\");
-      File pkcs7 = new File(base, "anadal_caib.cer");
-      byte[] data = getBytesFromFile(pkcs7);
-
-      int modeValidacio = ValidaCertificat.MODE_VALIDACIO_AMB_REVOCACIO;
-      // int modeValidacio = ValidaCertificat.MODE_VALIDACIO_CADENA;
-      // int modeValidacio = ValidaCertificat.MODE_VALIDACIO_SIMPLE;
-
-      ValidaCertificat vc = new ValidaCertificat(endPoint, aplicacioId, modeValidacio,
-          username, password);
-
-      boolean obtenirDadesCertificat = false;
-      ResultatValidacio rv = vc.validar(data, obtenirDadesCertificat);
-
-      System.out.println(" =============== OK ================");
-      System.out.println(rv.toString());
-
-    } catch (Exception e) {
-
-      System.out.println(e.getMessage());
-
       e.printStackTrace();
     }
 
