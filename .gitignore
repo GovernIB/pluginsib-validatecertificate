@@ -36,3 +36,6 @@
 /api/.settings
 /fake/config.properties
 /afirmacxf/test.log
+/proves.txt
+/afirmacxf/target
+/api/target
