@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESEAL</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <denominacioSistemaComponent>Plataforma de validación de Nombre de la Administración</denominacioSistemaComponent>
+        <email>info@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - AAPP,serialNumber=A62634068,OU=Certificados Digitales para la Administracion Publica,O=Firmaprofesional SA,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional SA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>12345678Z</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Nombre de la Administración</entitatSubscriptoraNom>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>12345678Z</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>2784719644563897398</numeroSerie>
+        <oiEuropeu>VATES-A99999999</oiEuropeu>
+        <organitzacio>Nombre de la Administración</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.21.2,2.16.724.1.3.5.6.2,0.4.0.194112.1.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>CN=Plataforma de validación de Nombre de la Administración,serialNumber=A99999999,givenName=Nombre,SN=Apellido1 Apellido2 - DNI 12345678Z,OU=SELLO ELECTRONICO,2.5.4.97=#130F56415445532D413939393939393939,O=Nombre de la Administración,C=ES</subject>
+        <tipusCertificat>FP PF Sello Órgano SW</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <validDesDe>2017-03-17T13:09:26+01:00</validDesDe>
+        <validFins>2020-03-16T13:09:26+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

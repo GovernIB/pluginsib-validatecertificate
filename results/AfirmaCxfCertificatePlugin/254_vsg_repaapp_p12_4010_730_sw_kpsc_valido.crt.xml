@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>11</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <documentRepresentacio>Reg: MADRID/Hoja: M-99999/Tomo: 99999/Sección: 99/Libro: 9999/Folio: 999/Fecha: 30-02-2050/Inscripción: 9</documentRepresentacio>
+        <email>soporte@ivnosys.com</email>
+        <emissorID>CN=IVSIGN CA,O=IVNOSYS SOLUCIONES S.L.,2.5.4.97=#0C0F56415445532D423938333333333632,OU=see current address at https://psec.ivnosys.com/address,L=PATERNA,C=ES</emissorID>
+        <emissorOrganitzacio>IVNOSYS SOLUCIONES S.L.</emissorOrganitzacio>
+        <llinatgesResponsable>APELLIDO1 APELLIDO2</llinatgesResponsable>
+        <nifResponsable>00000000T</nifResponsable>
+        <nomCompletResponsable>NOMBRE APELLIDO1 APELLIDO2</nomCompletResponsable>
+        <nomResponsable>NOMBRE</nomResponsable>
+        <numeroSerie>1599032863685579600875</numeroSerie>
+        <oiEuropeu>VATES-B00000109</oiEuropeu>
+        <organitzacio>[SOLO PRUEBAS] EMPRESA PRUEBA IVSIGN S.L.</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.47304.4.16.1.3.2.2,2.16.724.1.3.5.8,0.4.0.194112.1.0</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>APELLIDO1</primerLlinatgeResponsable>
+        <raoSocial>[SOLO PRUEBAS] EMPRESA PRUEBA IVSIGN S.L.</raoSocial>
+        <segonLlinatgeResponsable>APELLIDO2</segonLlinatgeResponsable>
+        <subject>C=ES,O=[SOLO PRUEBAS] EMPRESA PRUEBA IVSIGN S.L.,OU=DEPARTAMENTO2 PRUEBA IVSIGN,OU=DEPARTAMENTO1 PRUEBA IVSIGN,2.5.4.97=#0C0F56415445532D423030303030313039,T=DIRECTOR,serialNumber=IDCES-00000000T,SN=APELLIDO1 APELLIDO2,givenName=NOMBRE,CN=[SOLO PRUEBAS]00000000T NOMBRE APELLIDO1 (R: B00000109),description=Reg: MADRID/Hoja: M-99999/Tomo: 99999/Sección: 99/Libro: 9999/Folio: 999/Fecha: 30-02-2050/Inscripción: 9</subject>
+        <tipusCertificat>IVNOSYS Representante PJ Trámites AAPP</tipusCertificat>
+        <unitatOrganitzativa> OrganizationUnit=DEPARTAMENTO1 PRUEBA IVSIGN OrganizationUnit=DEPARTAMENTO2 PRUEBA IVSIGN</unitatOrganitzativa>
+        <unitatOrganitzativaNifCif>B00000109</unitatOrganitzativaNifCif>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2018-03-08T17:12:00+01:00</validDesDe>
+        <validFins>2019-03-08T17:12:00+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

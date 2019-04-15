@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>0</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <email>email@example.net</email>
+        <emissorID>2.5.4.97=#0C0F56415445532D413636373231343939,CN=UANATACA CA1 2016,OU=TSP-UANATACA,O=UANATACA S.A.,L=Barcelona (see current address at www.uanataca.com/address),C=ES</emissorID>
+        <emissorOrganitzacio>UANATACA S.A.</emissorOrganitzacio>
+        <idEuropeu>IDCES-L12345678</idEuropeu>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>L12345678</nifResponsable>
+        <nomCompletResponsable>Test Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Test Nombre</nomResponsable>
+        <numeroSerie>9137818222087891480</numeroSerie>
+        <organitzacio>Test Organization</organitzacio>
+        <pais>ES</pais>
+        <politica>0.4.0.194112.1.2,1.3.6.1.4.1.47286.1.2.6.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>2.5.4.97=#0C0E56415445532D5332383333303032,CN=Test Nombre Apellido1 Apellido2,serialNumber=IDCES-L12345678,givenName=Test Nombre,SN=Apellido1 Apellido2,T=Test Title,OU=Test Organizational Unit,O=Test Organization,C=ES</subject>
+        <tipusCertificat>UANATACA PF Representante QSCD Centralizado</tipusCertificat>
+        <unitatOrganitzativa>Test Organizational Unit</unitatOrganitzativa>
+        <usCertificat>nonRepudiation</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2018-07-02T17:29:14+02:00</validDesDe>
+        <validFins>2021-07-01T17:29:14+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

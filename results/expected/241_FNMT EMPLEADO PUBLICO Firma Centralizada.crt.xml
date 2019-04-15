@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <email>soporte_tecnico_ceres@fnmt.es</email>
+        <emissorID>CN=AC Administración Pública,serialNumber=Q2826004J,OU=CERES,O=FNMT-RCM,C=ES</emissorID>
+        <emissorOrganitzacio>FNMT-RCM</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>FNMT-RCM PRUEBAS</entitatSubscriptoraNom>
+        <idEuropeu>IDCES-99999999R</idEuropeu>
+        <llinatgesResponsable>ESPAÑOL ESPAÑOL</llinatgesResponsable>
+        <llocDeFeina>PROBADOR ICLOUD</llocDeFeina>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>JUAN ESPAÑOL ESPAÑOL</nomCompletResponsable>
+        <nomResponsable>JUAN</nomResponsable>
+        <numeroSerie>112159183735515290822422584032339725736</numeroSerie>
+        <organitzacio>FNMT-RCM PRUEBAS</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.5734.3.3.10.1,0.4.0.194112.1.2,2.16.724.1.3.5.7.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>ESPAÑOL</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>ESPAÑOL</segonLlinatgeResponsable>
+        <subject>T=PROBADOR ICLOUD,CN=JUAN ESPAÑOL ESPAÑOL - DNI 99999999R,givenName=JUAN,SN=ESPAÑOL ESPAÑOL,serialNumber=IDCES-99999999R,OU=IDENTIFICACION DE PRUEBAS,OU=PRUEBAS ICLOUD,OU=CERTIFICADO  ELECTRONICO  DE  EMPLEADO PUBLICO,O=FNMT-RCM PRUEBAS,C=ES</subject>
+        <tipusCertificat>FNMT EMPLEADO PUBLICO Firma Centralizada</tipusCertificat>
+        <unitatOrganitzativa> OrganizationUnit=CERTIFICADO  ELECTRONICO  DE  EMPLEADO PUBLICO OrganizationUnit=PRUEBAS ICLOUD OrganizationUnit=IDENTIFICACION DE PRUEBAS</unitatOrganitzativa>
+        <usCertificat>nonRepudiation</usCertificat>
+        <validDesDe>2018-07-13T11:53:08+02:00</validDesDe>
+        <validFins>2021-07-13T11:53:08+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

@@ -1,12 +1,9 @@
 package org.fundaciobit.plugins.certificate.afirmacxf;
 
 import java.io.StringReader;
-import java.math.BigInteger;
 import java.security.cert.X509Certificate;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 import javax.xml.bind.JAXBContext;
@@ -35,14 +32,14 @@ import sun.misc.BASE64Encoder;
  * @author anadal
  * 
  */
+@SuppressWarnings("restriction")
 public class ValidaCertificat {
 
   public static final int MODE_VALIDACIO_SIMPLE = 0;
   public static final int MODE_VALIDACIO_AMB_REVOCACIO = 1;
   public static final int MODE_VALIDACIO_CADENA = 2;
 
-  private static final SimpleDateFormat SDF = new SimpleDateFormat(
-      "yyyy-MM-dd EEE HH:mm:ss Z", new Locale("es"));
+
 
   protected final Logger log = Logger.getLogger(getClass());
 
@@ -50,30 +47,33 @@ public class ValidaCertificat {
   private final String aplicacioId;
 
   private final int modeValidacio;
+  
+  private final boolean debug;
 
   private final ClientHandler clientHandler;
 
   private ValidaCertificat(String endPoint, String aplicacioId, int modeValidacio,
-      ClientHandler clientHandler) {
+      ClientHandler clientHandler, boolean debug) {
     this.endPoint = endPoint;
     this.aplicacioId = aplicacioId;
     this.modeValidacio = modeValidacio;
     this.clientHandler = clientHandler;
+    this.debug = debug;
   }
 
   public ValidaCertificat(String endPoint, String application_id, int modeValidacio,
-      String username, String password) {
+      String username, String password, boolean debug) {
     this(endPoint, application_id, modeValidacio, new ClientHandlerUsernamePassword(username,
-        password));
+        password), debug);
   }
 
   public ValidaCertificat(String endPoint, String application_id, int modeValidacio,
       String keystoreLocation, String keystoreType, String keystorePassword,
-      String keystoreCertAlias, String keystoreCertPassword) {
+      String keystoreCertAlias, String keystoreCertPassword, boolean debug) {
 
     this(endPoint, application_id, modeValidacio, new ClientHandlerCertificate(
         keystoreLocation, keystoreType, keystorePassword, keystoreCertAlias,
-        keystoreCertPassword));
+        keystoreCertPassword), debug);
   }
 
   public int getModeValidacio() {
@@ -108,7 +108,9 @@ public class ValidaCertificat {
     String respostaXml = cridarValidarCertificado(certificatBase64, obtenirDadesCertificat,
         modeValidacio);
 
-    log.debug(respostaXml);
+    if (debug) {
+      log.info(respostaXml);
+    }
 
     MensajeSalida ms = getMensajeSalidaFromXml(respostaXml);
 
@@ -178,81 +180,17 @@ public class ValidaCertificat {
     }
 
     List<Campo> camps = infoCert.getCampo();
-
-    InformacioCertificat dades = new InformacioCertificat();
-
-    for (Campo camp : camps) {
-
-      String key = camp.getIdCampo();
-      String value = camp.getValorCampo();
-      if ("tipoCertificado".equalsIgnoreCase(key))
-        dades.setTipusCertificat(value);
-      if ("subject".equalsIgnoreCase(key))
-        dades.setSubject(value);
-      if ("NombreApellidosResponsable".equalsIgnoreCase(key))
-        dades.setNomCompletResponsable(value);
-      if ("nombreResponsable".equalsIgnoreCase(key))
-        dades.setNomResponsable(value);
-      if ("primerApellidoResponsable".equalsIgnoreCase(key))
-        dades.setPrimerLlinatgeResponsable(value);
-      if ("segundoApellidoResponsable".equalsIgnoreCase(key))
-        dades.setSegonLlinatgeResponsable(value);
-      if ("NIFResponsable".equalsIgnoreCase(key))
-        dades.setNifResponsable(value);
-      if ("idEmisor".equalsIgnoreCase(key))
-        dades.setEmissorID(value);
-      if ("NIF-CIF".equalsIgnoreCase(key))
-        dades.setUnitatOrganitzativaNifCif(value);
-      if ("email".equalsIgnoreCase(key))
-        dades.setEmail(value);
-      if ("fechaNacimiento".equalsIgnoreCase(key))
-        dades.setDataNaixement(value);
-      if ("razonSocial".equalsIgnoreCase(key))
-        dades.setRaoSocial(value);
-      if ("clasificacion".equalsIgnoreCase(key))
-        dades.setClassificacio(Integer.parseInt(value));
-      if ("numeroSerie".equalsIgnoreCase(key))
-        dades.setNumeroSerie(new BigInteger(value));
-      if ("usoCertificado".equalsIgnoreCase(key))
-        dades.setUsCertificat(value);
-      if ("extensionUsoCertificado".equalsIgnoreCase(key))
-        dades.setUsCertificatExtensio(value);
-      if ("validoHasta".equalsIgnoreCase(key)) {
-        try {
-          dades.setValidFins(SDF.parse(value));
-        } catch (ParseException e) {
-          log.error("Error desconegut parsejant la data de final " + value, e);
-        }
-      }
-      if ("validoDesde".equalsIgnoreCase(key)) {
-        try {
-          dades.setValidDesDe(SDF.parse(value));
-        } catch (ParseException e) {
-          log.error("Error desconegut parsejant la data d'inici " + value, e);
-        }
-      }
-
-      if ("politica".equalsIgnoreCase(key))
-        dades.setPolitica(value);
-
-      if ("versionPolitica".equalsIgnoreCase(key))
-        dades.setPoliticaVersio(value);
-
-      if ("idPolitica".equalsIgnoreCase(key))
-        dades.setPoliticaID(value);
-
-      if ("OrganizacionEmisora".equalsIgnoreCase(key))
-        dades.setEmissorOrganitzacio(value);
-
-      if ("pais".equalsIgnoreCase(key))
-        dades.setPais(value);
-
-      if ("unidadOrganizativa".equalsIgnoreCase(key))
-        dades.setUnitatOrganitzativa(value);
-
+    
+    Map<String, Object> map = new HashMap<String, Object>();
+    
+    for (Campo campo : camps) {
+      map.put(campo.getIdCampo(), campo.getValorCampo());
     }
-    return dades;
+
+    return InfoCertificatUtils.processInfoCertificate(map);
   }
+
+ 
   
   // Cache
   protected Validacion api = null;

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESEAL</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <denominacioSistemaComponent>Nombre de la Organización</denominacioSistemaComponent>
+        <email>info@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNif>A99999999</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organización S.A.</entitatSubscriptoraNom>
+        <numeroSerie>3138383325169155121</numeroSerie>
+        <oiEuropeu>VATES-A99999999</oiEuropeu>
+        <organitzacio>Organización S.A.</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.10.2,0.4.0.194112.1.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>EMAIL=info@firmaprofesional.com,CN=Nombre de la Organización,serialNumber=A99999999,OU=Departamento,2.5.4.97=#0C0F56415445532D413939393939393939,O=Organización S.A.,ST=Barcelona,C=ES</subject>
+        <tipusCertificat>FP Sello Empresarial</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-03-17T14:10:25+01:00</validDesDe>
+        <validFins>2022-03-16T14:10:25+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

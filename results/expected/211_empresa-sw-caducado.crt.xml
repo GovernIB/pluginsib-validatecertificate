@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>1</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <email>demo@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNif>A99999999</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>ACME S.A.</entitatSubscriptoraNom>
+        <numeroSerie>6355197821864480387</numeroSerie>
+        <oiEuropeu>VATES-A99999999</oiEuropeu>
+        <organitzacio>ACME S.A.</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.10.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <raoSocial>ACME S.A.</raoSocial>
+        <subject>CN=ACME S.A.,serialNumber=A99999999,OU=Contabilidad,2.5.4.97=#0C0F56415445532D413939393939393939,O=ACME S.A.,ST=BARCELONA,C=ES</subject>
+        <tipusCertificat>FirmaProfesional PJ Certificado Corporativo de Sello Empresarial</tipusCertificat>
+        <unitatOrganitzativaNifCif>A99999999</unitatOrganitzativaNifCif>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment | dataEncipherment | keyAgreement</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-07-21T09:15:00+02:00</validDesDe>
+        <validFins>2017-07-22T09:15:00+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

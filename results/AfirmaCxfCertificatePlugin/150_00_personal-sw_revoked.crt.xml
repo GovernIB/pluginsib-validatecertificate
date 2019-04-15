@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>0</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <email>info@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <idEuropeu>IDCES-12345678Z</idEuropeu>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>12345678Z</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>7079837014924400354</numeroSerie>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.40.2,0.4.0.194112.1.0</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>CN=Nombre Apellido1 Apellido2,serialNumber=IDCES-12345678Z,givenName=Nombre,SN=Apellido1 Apellido2,C=ES</subject>
+        <tipusCertificat>FP PF Certificado Personal</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication</usCertificatExtensio>
+        <validDesDe>2017-04-26T10:17:57+02:00</validDesDe>
+        <validFins>2022-04-25T10:17:57+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

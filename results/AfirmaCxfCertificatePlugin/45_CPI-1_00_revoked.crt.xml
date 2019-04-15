@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>false</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <email>scd@aoc.cat</email>
+        <emissorID>CN=EC-SectorPublic,OU=Serveis Públics de Certificació,O=CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA,C=ES</emissorID>
+        <emissorOrganitzacio>CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organització de prova</entitatSubscriptoraNom>
+        <llinatgesResponsable>de la Peça de Prova</llinatgesResponsable>
+        <llocDeFeina>Càrrec de prova</llocDeFeina>
+        <nifResponsable>00000000T</nifResponsable>
+        <nomCompletResponsable>Persona de la Peça de Prova</nomCompletResponsable>
+        <nomResponsable>Persona</nomResponsable>
+        <numeroSerie>3352280727604088070</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organització de prova</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.15096.1.3.2.7.1.2,2.16.724.1.3.5.7.1,0.4.0.2042.1.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>de la Peça</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>de Prova</segonLlinatgeResponsable>
+        <subject>CN=Persona de la Peça de Prova - DNI 00000000T (AUT),serialNumber=IDCES-00000000T,givenName=Persona,SN=de la Peça de Prova - DNI 00000000T,T=Càrrec de prova,OU=Treballador públic de nivell alt d'autenticació,2.5.4.97=#0C0F56415445532D51303030303030304A,O=Organització de prova,C=ES</subject>
+        <tipusCertificat>CATCERT SECTORPUBLIC CPI-1</tipusCertificat>
+        <unitatOrganitzativa>Treballador públic de nivell alt d'autenticació</unitatOrganitzativa>
+        <usCertificat>digitalSignature | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection
+KeyPurposeId 2:  1.3.6.1.4.1.311.20.2.2</usCertificatExtensio>
+        <validDesDe>2017-05-26T10:36:39+02:00</validDesDe>
+        <validFins>2021-05-26T10:36:39+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>0</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <email>info@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>324524253958181216</numeroSerie>
+        <organitzacio>Colegio Oficial / CO / 00</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.1.1,0.4.0.194112.1.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>EMAIL=info@firmaprofesional.com,CN=Nombre Apellido1 Apellido2  / Num:1111,serialNumber=99999999R,givenName=Nombre,SN=Apellido1 Apellido2,T=Especialidad,OU=Colegiado,O=Colegio Oficial / CO / 00,ST=Barcelona,C=ES</subject>
+        <tipusCertificat>FP PF Corporativo Colegiado HW</tipusCertificat>
+        <unitatOrganitzativa>Colegiado</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-02-23T12:16:34+01:00</validDesDe>
+        <validFins>2021-02-22T12:16:34+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

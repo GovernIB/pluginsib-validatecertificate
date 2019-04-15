@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=Camerfirma Corporate Server II - 2015,L=Madrid (see current address at https://www.camerfirma.com/address),SERIALNUMBER=A82743287,O=AC Camerfirma S.A.,OU=AC CAMERFIRMA,C=ES</emissorID>
+        <emissorOrganitzacio>AC Camerfirma S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNom>[SOLO PRUEBAS] ENTIDAD</entitatSubscriptoraNom>
+        <nomDomini>060.es</nomDomini>
+        <numeroSerie>1043854917464794103109</numeroSerie>
+        <oiEuropeu>VATES-R0599999J</oiEuropeu>
+        <organitzacio>[SOLO PRUEBAS] ENTIDAD</organitzacio>
+        <pais>ES</pais>
+        <usCertificat>digitalSignature | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication</usCertificatExtensio>
+        <validDesDe>2018-06-27T13:49:28+02:00</validDesDe>
+        <validFins>2018-06-28T13:49:28+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>-1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificat ha caducat</resultatValidacioDescripcio>
+</resultatValidacio>

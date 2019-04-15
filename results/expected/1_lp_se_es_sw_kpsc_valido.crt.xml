@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>false</certificatQualificat>
+        <classificacio>2</classificacio>
+        <classificacioEidas>UNKNOWN</classificacioEidas>
+        <emissorID>CN=Camerfirma Corporate Server II - 2015,L=Madrid (see current address at https://www.camerfirma.com/address),serialNumber=A82743287,O=AC Camerfirma S.A.,OU=AC CAMERFIRMA,C=ES</emissorID>
+        <emissorOrganitzacio>AC Camerfirma S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNif>R0599999J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>[SOLO PRUEBAS] ENTIDAD</entitatSubscriptoraNom>
+        <numeroSerie>13532265942449732717</numeroSerie>
+        <organitzacio>[SOLO PRUEBAS] ENTIDAD</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.17326.10.16.2.3.2,0.4.0.2042.1.3</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>C=ES,O=[SOLO PRUEBAS] ENTIDAD,OU=DEPARTAMENTO CERTIFICADO2,OU=DEPARTAMENTO CERTIFICADO1,2.5.4.97=#0C0F56415445532D52303539393939394A,CN=[SOLO PRUEBAS]DENOMINACIÓN DEL CERTIFICADO,description=LP-SE-SW-KPSC</subject>
+        <tipusCertificat>CAMERFIRMA Sello Electrónico no cualificado</tipusCertificat>
+        <unitatOrganitzativa> OrganizationUnit=DEPARTAMENTO CERTIFICADO1 OrganizationUnit=DEPARTAMENTO CERTIFICADO2</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2016-07-01T18:05:41+02:00</validDesDe>
+        <validFins>2019-07-01T18:05:41+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

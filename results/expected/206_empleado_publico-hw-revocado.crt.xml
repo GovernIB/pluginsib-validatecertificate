@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <email>demo@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - AAPP,serialNumber=A62634068,OU=Certificados Digitales para la Administracion Publica,O=Firmaprofesional SA,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional SA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>A99999999</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>ACME S.A.</entitatSubscriptoraNom>
+        <llinatgesResponsable>GARCÍA LÓPEZ</llinatgesResponsable>
+        <llocDeFeina>Responsable</llocDeFeina>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>JUAN GARCÍA LÓPEZ</nomCompletResponsable>
+        <nomResponsable>JUAN</nomResponsable>
+        <numeroIdentificacionPersonal>1111</numeroIdentificacionPersonal>
+        <numeroSerie>6664052312306100964</numeroSerie>
+        <organitzacio>ACME S.A.</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.22.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>GARCÍA</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>LÓPEZ</segonLlinatgeResponsable>
+        <subject>CN=JUAN GARCÍA LÓPEZ - DNI 99999999R,serialNumber=99999999R,givenName=JUAN,SN=GARCÍA LÓPEZ - DNI 99999999R,T=Responsable,OU=1111,OU=Contabilidad,OU=Certificado electrónico de empleado público,O=ACME S.A.,C=ES</subject>
+        <tipusCertificat>FP PF Empleado Público HW</tipusCertificat>
+        <unitatOrganitzativa>Contabilidad</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment | dataEncipherment | keyAgreement</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-07-21T09:14:00+02:00</validDesDe>
+        <validFins>2021-07-21T09:14:00+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

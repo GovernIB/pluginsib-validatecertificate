@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <emissorID>CN=EC-SectorPublic,OU=Serveis Públics de Certificació,O=CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA,C=ES</emissorID>
+        <emissorOrganitzacio>CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organització de prova</entitatSubscriptoraNom>
+        <llinatgesResponsable>de la Peça de Prova</llinatgesResponsable>
+        <llocDeFeina>Càrrec de prova</llocDeFeina>
+        <nifResponsable>00000000T</nifResponsable>
+        <nomCompletResponsable>Persona de la Peça de Prova</nomCompletResponsable>
+        <nomResponsable>Persona</nomResponsable>
+        <numeroSerie>342958285529801937</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.15096.1.3.2.7.1.1,2.16.724.1.3.5.7.1,0.4.0.194112.1.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>de la Peça</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>de Prova</segonLlinatgeResponsable>
+        <subject>CN=Persona de la Peça de Prova - DNI 00000000T (SIG),serialNumber=IDCES-00000000T,givenName=Persona,SN=de la Peça de Prova - DNI 00000000T,T=Càrrec de prova,OU=Treballador públic de nivell alt de signatura,2.5.4.97=#0C0F56415445532D51303030303030304A,O=Organització de prova,C=ES</subject>
+        <tipusCertificat>CATCERT SECTORPUBLIC CPSQ-1</tipusCertificat>
+        <unitatOrganitzativa>Treballador públic de nivell alt de signatura</unitatOrganitzativa>
+        <usCertificat>nonRepudiation</usCertificat>
+        <validDesDe>2017-05-03T14:06:47+02:00</validDesDe>
+        <validFins>2017-05-03T14:16:47+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

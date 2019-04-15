@@ -25,6 +25,7 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
 
   public static final String ENDPOINT = BASE_PROPERTIES + "endpoint";
   public static final String APPLICATION_ID = BASE_PROPERTIES + "applicationid";
+  public static final String DEBUG = BASE_PROPERTIES + "debug";
 
   public static final String VALIDATIONMODE = BASE_PROPERTIES + "validationmode";
 
@@ -127,12 +128,14 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
 
       String applicationID = getProperty(APPLICATION_ID);
       checkNullProperty(APPLICATION_ID, applicationID);
+      
+      boolean debug = "true".equals(getProperty(DEBUG, "false"));
 
       if (getProperty(AUTH_UP_USERNAME) != null) {
         String username = getProperty(AUTH_UP_USERNAME);
         String password = getProperty(AUTH_UP_PASSWORD);
         validaCertificat = new ValidaCertificat(endPoint, applicationID, modeValidacio,
-            username, password);
+            username, password, debug);
       } else if (getProperty(AUTH_KS_PATH) != null) {
 
         String path = getProperty(AUTH_KS_PATH);
@@ -142,7 +145,7 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
         String certPassword = getProperty(AUTH_KS_CERT_PASSWORD);
 
         validaCertificat = new ValidaCertificat(endPoint, applicationID, modeValidacio, path,
-            type, password, alias, certPassword);
+            type, password, alias, certPassword, debug);
 
       } else {
         throw new Exception("No s'ha definit en les propietats del sistema les dades"

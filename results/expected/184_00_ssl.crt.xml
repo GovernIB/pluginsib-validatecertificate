@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>false</certificatQualificat>
+        <classificacio>9</classificacio>
+        <classificacioEidas>WSA</classificacioEidas>
+        <emissorID>CN=AC Firmaprofesional - INFRAESTRUCTURA,serialNumber=A62634068,OU=Security Services,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNif></entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organización</entitatSubscriptoraNom>
+        <nomDomini>www.firmaprofesional.com</nomDomini>
+        <numeroSerie>321470192117433133</numeroSerie>
+        <organitzacio>Organización</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.3.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>CN=www.firmaprofesional.com,2.5.4.97=#130E56415445532D3939393939393939,O=Organización,L=Barcelona,C=ES</subject>
+        <tipusCertificat>FP COMP Certificados de Servidor Web (SSL) Estandar SHA256</tipusCertificat>
+        <usCertificat>digitalSignature | keyEncipherment | dataEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication</usCertificatExtensio>
+        <validDesDe>2017-02-23T12:29:05+01:00</validDesDe>
+        <validFins>2020-02-23T12:29:05+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

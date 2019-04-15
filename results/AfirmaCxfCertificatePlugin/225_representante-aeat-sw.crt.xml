@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>11</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <documentRepresentacio>Reg:1/Hoja:2/Tomo:3/Sección:4/Libro:5/Folio:6/Fecha:10-10-2010/Inscripción:7</documentRepresentacio>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <llinatgesResponsable>GARCÍA LÓPEZ</llinatgesResponsable>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>JUAN GARCÍA LÓPEZ</nomCompletResponsable>
+        <nomResponsable>JUAN</nomResponsable>
+        <numeroSerie>2008923551462749906</numeroSerie>
+        <oiEuropeu>VATES-A99999999</oiEuropeu>
+        <organitzacio>ACME S.A.</organitzacio>
+        <pais>ES</pais>
+        <politica>2.16.724.1.3.5.8,1.3.6.1.4.1.13177.10.1.11.2,0.4.0.194112.1.0</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>GARCÍA</primerLlinatgeResponsable>
+        <raoSocial>ACME S.A.</raoSocial>
+        <segonLlinatgeResponsable>LÓPEZ</segonLlinatgeResponsable>
+        <subject>description=Reg:1/Hoja:2/Tomo:3/Sección:4/Libro:5/Folio:6/Fecha:10-10-2010/Inscripción:7,CN=99999999R JUAN GARCÍA (R:A99999999),serialNumber=99999999R,givenName=JUAN,SN=GARCÍA LÓPEZ,2.5.4.97=#0C0F56415445532D413939393939393939,O=ACME S.A.,C=ES</subject>
+        <tipusCertificat>FP PF Corporativo Representante Legal SW</tipusCertificat>
+        <unitatOrganitzativaNifCif>A99999999</unitatOrganitzativaNifCif>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-07-21T09:16:00+02:00</validDesDe>
+        <validFins>2022-07-21T09:16:00+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

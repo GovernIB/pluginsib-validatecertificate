@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=EC-SectorPublic,OU=Serveis Públics de Certificació,O=CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA,C=ES</emissorID>
+        <emissorOrganitzacio>CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA</emissorOrganitzacio>
+        <entitatSubscriptoraNom>Organització de prova</entitatSubscriptoraNom>
+        <llinatgesResponsable>de la Peça de Prova - DNI 00000000T</llinatgesResponsable>
+        <nifResponsable>Q0000000J</nifResponsable>
+        <nomCompletResponsable>Persona de la Peça de Prova - DNI 00000000T</nomCompletResponsable>
+        <nomResponsable>Persona</nomResponsable>
+        <numeroSerie>5671519731077028332</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organització de prova</organitzacio>
+        <pais>ES</pais>
+        <primerLlinatgeResponsable>de la Peça de Prova - DNI 00000000T</primerLlinatgeResponsable>
+        <unitatOrganitzativa>Certificat de segell electrònic nivell mig</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-02-23T13:13:20+01:00</validDesDe>
+        <validFins>2020-02-23T13:13:20+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
+</resultatValidacio>

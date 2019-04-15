@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>0</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <llinatgesResponsable>GARCÍA LÓPEZ</llinatgesResponsable>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>JUAN GARCÍA LÓPEZ</nomCompletResponsable>
+        <nomResponsable>JUAN</nomResponsable>
+        <numeroSerie>7047116705119728784</numeroSerie>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.40.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>CN=JUAN GARCÍA LÓPEZ,serialNumber=99999999R,givenName=JUAN,SN=GARCÍA LÓPEZ,C=ES</subject>
+        <tipusCertificat>FirmaProfesional PF Certificado Personal</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication</usCertificatExtensio>
+        <validDesDe>2017-07-21T09:16:00+02:00</validDesDe>
+        <validFins>2017-07-22T09:16:00+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

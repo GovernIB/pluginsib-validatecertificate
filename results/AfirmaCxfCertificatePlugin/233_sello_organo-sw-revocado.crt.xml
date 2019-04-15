@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <denominacioSistemaComponent>Nombre Aplicacion de SelloOrgano</denominacioSistemaComponent>
+        <email></email>
+        <emissorID>CN=AC Firmaprofesional - AAPP,serialNumber=A62634068,OU=Certificados Digitales para la Administracion Publica,O=Firmaprofesional SA,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional SA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>A99999999</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>ACME S.A.</entitatSubscriptoraNom>
+        <llinatgesResponsable></llinatgesResponsable>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable></nomCompletResponsable>
+        <nomResponsable>JUAN</nomResponsable>
+        <numeroSerie>466512225845437622</numeroSerie>
+        <oiEuropeu></oiEuropeu>
+        <organitzacio>ACME S.A.</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.21.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable></primerLlinatgeResponsable>
+        <segonLlinatgeResponsable></segonLlinatgeResponsable>
+        <subject>CN=Nombre Aplicacion de SelloOrgano,serialNumber=A99999999,givenName=JUAN,SN=GARCÍA LÓPEZ - DNI 99999999R,OU=SELLO ELECTRONICO,O=ACME S.A.,C=ES</subject>
+        <tipusCertificat>FP PF Sello Órgano SW</tipusCertificat>
+        <unitatOrganitzativaNifCif>A99999999</unitatOrganitzativaNifCif>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment | dataEncipherment</usCertificat>
+        <validDesDe>2017-07-21T09:15:00+02:00</validDesDe>
+        <validFins>2020-07-20T09:15:00+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

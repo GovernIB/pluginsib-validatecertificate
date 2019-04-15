@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESEAL</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <denominacioSistemaComponent>Plataforma de validación de Nombre de la Administración</denominacioSistemaComponent>
+        <email>info@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - AAPP,serialNumber=A62634068,OU=Certificados Digitales para la Administracion Publica,O=Firmaprofesional SA,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional SA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>A99999999</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Nombre de la Administración</entitatSubscriptoraNom>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>12345678Z</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>4651852346297062451</numeroSerie>
+        <organitzacio>Nombre de la Administración</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.21.3,2.16.724.1.3.5.6.1,0.4.0.194112.1.3</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>CN=Plataforma de validación de Nombre de la Administración,serialNumber=A99999999,givenName=Nombre,SN=Apellido1 Apellido2 - DNI 12345678Z,OU=SELLO ELECTRONICO,2.5.4.97=#130F56415445532D413939393939393939,O=Nombre de la Administración,C=ES</subject>
+        <tipusCertificat>FP Sello Órgano HSM</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-04-20T12:22:39+02:00</validDesDe>
+        <validFins>2020-04-19T12:22:39+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

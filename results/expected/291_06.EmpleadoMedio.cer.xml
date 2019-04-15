@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <email>test@email.com</email>
+        <emissorID>CN=vinCAsign nebulaSUITE2 Authority,O=VINTEGRIS SL,OU=vinCAsign,2.5.4.97=#0C0F56415445532D423632393133393236,L=HOSPITALET DE LLOBREGAT,ST=BARCELONA,C=ES</emissorID>
+        <emissorOrganitzacio>VINTEGRIS SL</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organización</entitatSubscriptoraNom>
+        <idEuropeu>IDCES-12345678J</idEuropeu>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <llocDeFeina>Cargo</llocDeFeina>
+        <nifResponsable>12345678J</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>4716554802744734714</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organización</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.47155.1.4.2,0.4.0.194112.1.0,2.16.724.1.3.5.7.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>C=ES,O=Organización,2.5.4.97=#0C0F56415445532D51303030303030304A,OU=E04976701,OU=Certificado electrónico empleado público nivel medio,T=Cargo,SN=Apellido1 Apellido2,givenName=Nombre,serialNumber=IDCES-12345678J,CN=Nombre Apellido1 Apellido2 - DNI 12345678J</subject>
+        <tipusCertificat>VINCASIGN PF Empleado Medio</tipusCertificat>
+        <unitatOrganitzativa> OrganizationUnit=Certificado electrónico empleado público nivel medio OrganizationUnit=E04976701</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-10-31T12:27:08+01:00</validDesDe>
+        <validFins>2018-10-31T12:27:08+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

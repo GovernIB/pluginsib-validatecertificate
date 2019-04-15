@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>false</certificatQualificat>
+        <classificacio>2</classificacio>
+        <classificacioEidas>UNKNOWN</classificacioEidas>
+        <emissorID>CN=EC-SectorPublic,OU=Serveis Públics de Certificació,O=CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA,C=ES</emissorID>
+        <emissorOrganitzacio>CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organització de prova</entitatSubscriptoraNom>
+        <nomDomini>webtest.aoc.cat</nomDomini>
+        <numeroSerie>370074384087534154</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organització de prova</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.15096.1.3.2.51.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>CN=webtest.aoc.cat,2.5.4.97=#0C0F56415445532D51303030303030304A,O=Organització de prova,L=Barcelona,C=ES</subject>
+        <tipusCertificat>CATCERT SECTORPUBLIC CDS-1</tipusCertificat>
+        <unitatOrganitzativa>Serveis Públics de Certificació</unitatOrganitzativa>
+        <usCertificat>KeyPurposeId 0:  TLS Web server authentication</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication</usCertificatExtensio>
+        <validDesDe>2017-04-13T12:10:22+02:00</validDesDe>
+        <validFins>2017-04-13T14:34:00+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

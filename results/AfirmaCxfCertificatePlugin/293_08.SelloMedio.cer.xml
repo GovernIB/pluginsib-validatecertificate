@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESEAL</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <denominacioSistemaComponent>Organización (Q0000000X)</denominacioSistemaComponent>
+        <email>test@email.com</email>
+        <emissorID>CN=vinCAsign nebulaSUITE2 Authority,O=VINTEGRIS SL,OU=vinCAsign,2.5.4.97=#0C0F56415445532D423632393133393236,L=HOSPITALET DE LLOBREGAT,ST=BARCELONA,C=ES</emissorID>
+        <emissorOrganitzacio>VINTEGRIS SL</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000X</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organización</entitatSubscriptoraNom>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>12345678L</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>7150072995392809344</numeroSerie>
+        <oiEuropeu>VATES-Q0000000X</oiEuropeu>
+        <organitzacio>Organización</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.47155.1.5.2,0.4.0.194112.1.1,2.16.724.1.3.5.6.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>C=ES,O=Organización,2.5.4.97=#0C0F56415445532D513030303030303058,OU=Unidad org.,OU=SELLO ELECTRONICO,SN=Apellido1 Apellido2,givenName=Nombre,serialNumber=Q0000000X,CN=Organización (Q0000000X)</subject>
+        <tipusCertificat>VINCASIGN Sello Medio</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-10-31T14:25:53+01:00</validDesDe>
+        <validFins>2018-10-31T14:25:53+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

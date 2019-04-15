@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>9</classificacio>
+        <classificacioEidas>WSA</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <emissorID>CN=CA de Certificados SSL EV,OU=BZ Ziurtagiri publikoa - Certificado publico EV,O=IZENPE S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNom>Business Entity</entitatSubscriptoraNom>
+        <nomDomini>test-valid-qcpw.izenpe.eus</nomDomini>
+        <numeroSerie>46037980683181433557033135516882151249</numeroSerie>
+        <organitzacio>IZENPE</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.14777.6.1.3,0.4.0.194112.1.4,0.4.0.2042.1.4</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>CN=test-valid-qcpw.izenpe.eus,serialNumber=A01337260,OU=TI,O=IZENPE,STREET=Beato Tomas de Zumarraga 71 1º,L=VITORIA-GASTEIZ,ST=Alava,C=ES,postalCode=01008,businessCategory=Business Entity,1.3.6.1.4.1.311.60.2.1.1=#0C0F5649544F5249412D4741535445495A,1.3.6.1.4.1.311.60.2.1.2=#0C05416C617661,1.3.6.1.4.1.311.60.2.1.3=#13024553</subject>
+        <tipusCertificat>IZENPE SSL EV</tipusCertificat>
+        <unitatOrganitzativa>TI</unitatOrganitzativa>
+        <usCertificat>digitalSignature | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication
+KeyPurposeId 1:  TLS Web client authentication
+KeyPurposeId 2:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-12-05T15:48:21+01:00</validDesDe>
+        <validFins>2019-12-05T15:48:21+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

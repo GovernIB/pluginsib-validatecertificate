@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>9</classificacio>
+        <classificacioEidas>WSA</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <emissorID>CN=Camerfirma Corporate Server II - 2015,L=Madrid (see current address at https://www.camerfirma.com/address),serialNumber=A82743287,O=AC Camerfirma S.A.,OU=AC CAMERFIRMA,C=ES</emissorID>
+        <emissorOrganitzacio>AC Camerfirma S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNif>R0599999J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>[SOLO PRUEBAS] ENTIDAD</entitatSubscriptoraNom>
+        <nomDomini>060.es</nomDomini>
+        <numeroSerie>1043854917464794103109</numeroSerie>
+        <oiEuropeu>VATES-R0599999J</oiEuropeu>
+        <organitzacio>[SOLO PRUEBAS] ENTIDAD</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.17326.10.16.3.6.1.3.2.2,0.4.0.194112.1.4,2.16.724.1.3.5.5.2,2.23.140.1.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>C=ES,CN=060.es,1.3.6.1.4.1.311.60.2.1.3=#13024553,L=ÁVILA,O=[SOLO PRUEBAS] ENTIDAD,OU=PORTAL 060,OU=SEDE ELECTRONICA,2.5.4.97=#0C0F56415445532D52303539393939394A,serialNumber=R0599999J,businessCategory=Government Entity</subject>
+        <tipusCertificat>CAMERFIRMA Sede AAPP Medio</tipusCertificat>
+        <usCertificat>digitalSignature | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication</usCertificatExtensio>
+        <validDesDe>2018-06-27T13:49:28+02:00</validDesDe>
+        <validFins>2018-06-28T13:49:28+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

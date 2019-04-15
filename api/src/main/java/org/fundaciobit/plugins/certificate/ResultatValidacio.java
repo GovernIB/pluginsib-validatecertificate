@@ -1,10 +1,13 @@
 package org.fundaciobit.plugins.certificate;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * 
  * @author anadal
  * 
  */
+@XmlRootElement
 public class ResultatValidacio {
   
   public static final int RESULTAT_VALIDACIO_OK = 0;
@@ -43,7 +46,7 @@ public class ResultatValidacio {
     st.append("Resultat Validacio Codi: ").append(getResultatValidacioCodi()).append("\n");
     st.append("Resultat Validacio Desc.: ").append(getResultatValidacioDescripcio()).append("\n");
     if (getInformacioCertificat() != null) {
-      st.append(getInformacioCertificat());
+      st.append("\n").append(getInformacioCertificat());
     }
     return st.toString();
   }

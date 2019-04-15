@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>11</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <documentRepresentacio>Boletín:XXX/Fecha: dd-mm-aaaa/Numero resolucion: XXX</documentRepresentacio>
+        <email>test@email.com</email>
+        <emissorID>CN=vinCAsign nebulaSUITE2 Authority,O=VINTEGRIS SL,OU=vinCAsign,2.5.4.97=#0C0F56415445532D423632393133393236,L=HOSPITALET DE LLOBREGAT,ST=BARCELONA,C=ES</emissorID>
+        <emissorOrganitzacio>VINTEGRIS SL</emissorOrganitzacio>
+        <llinatgesResponsable>Apellidos</llinatgesResponsable>
+        <nifResponsable>12345678Y</nifResponsable>
+        <nomCompletResponsable>Nombre Apellidos</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>193084797265758781</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organización</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.47155.1.2.1,0.4.0.194112.1.2,2.16.724.1.3.5.8</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <raoSocial>Organización</raoSocial>
+        <subject>C=ES,O=Organización,2.5.4.97=#0C0F56415445532D51303030303030304A,OU=E04976701,T=Cargo,SN=Apellidos,givenName=Nombre,serialNumber=IDCES-12345678Y,CN=12345678Y Nombre Apellidos (R: Q0000000J),EMAIL=test@email.com,description=Boletín:XXX/Fecha: dd-mm-aaaa/Numero resolucion: XXX</subject>
+        <tipusCertificat>VINCASIGN Representante PJ DCCF</tipusCertificat>
+        <unitatOrganitzativa>E04976701</unitatOrganitzativa>
+        <unitatOrganitzativaNifCif>Q0000000J</unitatOrganitzativaNifCif>
+        <usCertificat>digitalSignature | nonRepudiation</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-10-27T11:37:43+02:00</validDesDe>
+        <validFins>2018-10-27T11:37:43+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

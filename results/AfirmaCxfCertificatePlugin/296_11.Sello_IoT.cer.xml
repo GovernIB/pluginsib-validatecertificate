@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESEAL</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <denominacioSistemaComponent>Definición 0000ZZZ4445 - Organización</denominacioSistemaComponent>
+        <email>test@email.com</email>
+        <emissorID>CN=vinCAsign nebulaSUITE2 Authority,O=VINTEGRIS SL,OU=vinCAsign,2.5.4.97=#0C0F56415445532D423632393133393236,L=HOSPITALET DE LLOBREGAT,ST=BARCELONA,C=ES</emissorID>
+        <emissorOrganitzacio>VINTEGRIS SL</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organización</entitatSubscriptoraNom>
+        <numeroSerie>4139985523059862126</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organización</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.47155.1.7.2,0.4.0.194112.1.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>C=ES,O=Organización,2.5.4.97=#0C0F56415445532D51303030303030304A,OU=0000ZZZ5555,serialNumber=Q0000000J,CN=Definición 0000ZZZ4445 - Organización</subject>
+        <tipusCertificat>VINCASIGN Sello IOT</tipusCertificat>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-10-27T13:16:33+02:00</validDesDe>
+        <validFins>2018-10-27T13:16:33+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>
+</resultatValidacio>

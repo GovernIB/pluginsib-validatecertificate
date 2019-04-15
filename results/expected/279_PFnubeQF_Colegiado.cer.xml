@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>0</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <email>email@example.net</email>
+        <emissorID>2.5.4.97=#0C0F56415445532D413636373231343939,CN=UANATACA CA1 2016,OU=TSP-UANATACA,O=UANATACA S.A.,L=Barcelona (see current address at www.uanataca.com/address),C=ES</emissorID>
+        <emissorOrganitzacio>UANATACA S.A.</emissorOrganitzacio>
+        <idEuropeu>IDCES-L12345678</idEuropeu>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>L12345678</nifResponsable>
+        <nomCompletResponsable>Test Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Test Nombre</nomResponsable>
+        <numeroSerie>5126612483062989990</numeroSerie>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.47286.1.1.6.2,0.4.0.194112.1.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>2.5.4.97=#0C0F56415445532D413636373231343939,CN=Test Nombre Apellido1 Apellido2 / Num:09250,serialNumber=IDCES-L12345678,givenName=Test Nombre,SN=Apellido1 Apellido2,T=Test Title,O=Test Colegio,C=ES</subject>
+        <tipusCertificat>UANATACA PF Firma QSCD Centralizado</tipusCertificat>
+        <usCertificat>nonRepudiation</usCertificat>
+        <validDesDe>2018-06-29T18:34:08+02:00</validDesDe>
+        <validFins>2021-06-28T18:34:08+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

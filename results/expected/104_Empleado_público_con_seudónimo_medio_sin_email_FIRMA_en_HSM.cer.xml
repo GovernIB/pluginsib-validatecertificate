@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>7</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <email></email>
+        <emissorID>CN=ESFIRMA AC AAPP 2,serialNumber=A50878842,OU=AUTORIDAD DE CERTIFICACION ESFIRMA - AAPP,O=ESPUBLICO SERVICIOS PARA LA ADMINISTRACION SA,L=ZARAGOZA,C=ES</emissorID>
+        <emissorOrganitzacio>ESPUBLICO SERVICIOS PARA LA ADMINISTRACION SA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>P0200001F</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>PRUEBAS</entitatSubscriptoraNom>
+        <numeroSerie>1074148707502802450</numeroSerie>
+        <oiEuropeu>VATES-P0200001F</oiEuropeu>
+        <organitzacio>PRUEBAS</organitzacio>
+        <pais>ES</pais>
+        <politica>2.16.724.1.3.5.4.2,0.4.0.194112.1.0,1.3.6.1.4.1.47281.1.3.4</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <pseudonim>94784686</pseudonim>
+        <subject>CN=SEUDONIMO - 94784686 - PRUEBAS (FIRMA),pseudonym=94784686,2.5.4.97=#130F56415445532D503032303030303146,OU=CERTIFICADO ELECTRONICO DE EMPLEADO PUBLICO CON SEUDONIMO,O=PRUEBAS,C=ES</subject>
+        <tipusCertificat>ESFIRMA 2 EMPLEADO PUBLICO Medio Seudónimo</tipusCertificat>
+        <unitatOrganitzativa>CERTIFICADO ELECTRONICO DE EMPLEADO PUBLICO CON SEUDONIMO</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-11-03T12:01:47+01:00</validDesDe>
+        <validFins>2019-11-03T12:01:47+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

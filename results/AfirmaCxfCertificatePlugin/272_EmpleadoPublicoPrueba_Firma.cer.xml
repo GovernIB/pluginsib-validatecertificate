@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <creatAmbUnDispositiuSegur>true</creatAmbUnDispositiuSegur>
+        <email>PruebaNom@meyss.es</email>
+        <emissorID>CN=SUBCA2 MEYSS,2.5.4.97=#0C0F56415445532D533238313930303145,serialNumber=S2819001E,OU=PRESTADOR DE SERVICIOS DE CONFIANZA MEYSS,OU=S.G. DE TECNOLOGIAS DE LA INFORMACION Y COMUNICACIONES,O=MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL,L=MADRID,C=ES</emissorID>
+        <emissorOrganitzacio>MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL</emissorOrganitzacio>
+        <entitatSubscriptoraNif>S2819001E</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL</entitatSubscriptoraNom>
+        <idEuropeu>IDCES-00000002W</idEuropeu>
+        <llinatgesResponsable>APE1PRUEBA APE2PRUEBA</llinatgesResponsable>
+        <llocDeFeina>ABOGADO DEL ESTADO ADJUNTO</llocDeFeina>
+        <nifResponsable>00000002W</nifResponsable>
+        <nomCompletResponsable>PRUEBANOM APE1PRUEBA APE2PRUEBA</nomCompletResponsable>
+        <nomResponsable>PRUEBANOM</nomResponsable>
+        <numeroSerie>1480691780</numeroSerie>
+        <organitzacio>MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.27781.2.5.4.1.1,2.16.724.1.3.5.7.1,0.4.0.194112.1.2</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>APE1PRUEBA</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>APE2PRUEBA</segonLlinatgeResponsable>
+        <subject>CN=PRUEBANOM APE1PRUEBA APE2PRUEBA - 00000002W (FIRMA),givenName=PRUEBANOM,SN=APE1PRUEBA APE2PRUEBA,serialNumber=IDCES-00000002W,T=ABOGADO DEL ESTADO ADJUNTO,OU=UNIDAD DE PERSONAL DESASIGNADO,OU=CERTIFICADO ELECTRONICO DE EMPLEADO PUBLICO,O=MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL,C=ES</subject>
+        <tipusCertificat>MEYSS Empleado Público Tarjeta</tipusCertificat>
+        <unitatOrganitzativa> OrganizationUnit=CERTIFICADO ELECTRONICO DE EMPLEADO PUBLICO OrganizationUnit=UNIDAD DE PERSONAL DESASIGNADO</unitatOrganitzativa>
+        <usCertificat>nonRepudiation</usCertificat>
+        <validDesDe>2017-11-08T12:46:50+01:00</validDesDe>
+        <validFins>2022-11-08T13:16:50+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>3</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificado esta revocado</resultatValidacioDescripcio>
+</resultatValidacio>

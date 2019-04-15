@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>8</classificacio>
+        <classificacioEidas>ESEAL</classificacioEidas>
+        <creatAmbUnDispositiuSegur>false</creatAmbUnDispositiuSegur>
+        <denominacioSistemaComponent>Sistema o aplicació de prova</denominacioSistemaComponent>
+        <emissorID>CN=EC-SectorPublic,OU=Serveis Públics de Certificació,O=CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA,C=ES</emissorID>
+        <emissorOrganitzacio>CONSORCI ADMINISTRACIO OBERTA DE CATALUNYA</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>Organització de prova</entitatSubscriptoraNom>
+        <numeroSerie>3784069560718276259</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organització de prova</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.15096.1.3.2.91.1,0.4.0.194112.1.1</politica>
+        <politicaID>MITyC</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <subject>CN=Sistema o aplicació de prova,serialNumber=Q0000000J,OU=Certificat d’aplicació,2.5.4.97=#0C0F56415445532D51303030303030304A,O=Organització de prova,C=ES</subject>
+        <tipusCertificat>CATCERT SECTORPUBLIC CDA-1</tipusCertificat>
+        <unitatOrganitzativa>Certificat d’aplicació</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2017-02-23T13:12:00+01:00</validDesDe>
+        <validFins>2021-02-23T13:12:00+01:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>
