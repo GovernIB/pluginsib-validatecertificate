@@ -4,7 +4,7 @@
 ***Versions***
 
 > - Versió Estable: -
-> - Versió en Desenvolupament: __pluginsib-validatecertificate-2.0__ (branca [pluginsib-validatecertificate-2.0](./tree/pluginsib-validatecertificate-2.0))
+> - Versió en Desenvolupament: __pluginsib-validatecertificate-2.0__ (branca [pluginsib-validatecertificate-2.0](../../tree/pluginsib-validatecertificate-2.0))
 
 **Descripció**
 
