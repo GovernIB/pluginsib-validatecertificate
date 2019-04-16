@@ -12,7 +12,8 @@ Nom | Descripció | Enllaç
 Directori | Descripció | Documentació
 ------------ | ------------- | -------------
 api | API de validatecertificate | --
-afirma | Validació de certificats amb servidors de @Frima | -- 
-afirmacxf | Validació de certificats amb servidors de @Frima emprant CXF | --
-fake | Implementació buida | --
+afirma | Validació de certificats atacant a @Firma usant Axis | -- 
+afirmacxf | Validació de certificats atacant a @Firma emprant CXF 2.2.12 | --
+afirmacxf-jboss7 | Validació de certificats atacant a @Firma emprant CXF 3.1.4 | --
+fake | Implementació emprant la classe CertificateUtils de pluginsib-core | --
 
