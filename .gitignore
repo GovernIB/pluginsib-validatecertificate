@@ -39,3 +39,8 @@
 /proves.txt
 /afirmacxf/target
 /api/target
+/afirmacxf-jboss7/.settings
+/afirmacxf-jboss7/config.properties
+/afirmacxf-jboss7/.classpath
+/afirmacxf-jboss7/.project
+/afirmacxf-jboss7/config.properties.sample
