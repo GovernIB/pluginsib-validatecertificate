@@ -114,6 +114,8 @@ public class TestCertificate  {
 
           if (errorsComparacio != null) {
             if (printResult) {
+              System.out.flush();
+              System.err.flush();
               System.err.println("El resultat del test " + name
                   + " no és l'esperat. Diferències(" + errorsComparacio.length + "): ");
               

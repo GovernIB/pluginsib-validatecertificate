@@ -24,8 +24,8 @@
         <unitatOrganitzativa> OrganizationUnit=Nom de la seu de prova OrganizationUnit=Certificat de seu electrònica nivell mig</unitatOrganitzativa>
         <usCertificat>digitalSignature | keyEncipherment</usCertificat>
         <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication</usCertificatExtensio>
-        <validDesDe>2019-03-29T13:12:30+01:00</validDesDe>
-        <validFins>2017-03-29T14:12:30+02:00</validFins>
+        <validDesDe>2017-03-29T14:12:30+02:00</validDesDe>
+        <validFins>2019-03-29T13:12:30+01:00</validFins>
     </informacioCertificat>
     <resultatValidacioCodi>1</resultatValidacioCodi>
     <resultatValidacioDescripcio>El certificado no paso la validacion</resultatValidacioDescripcio>

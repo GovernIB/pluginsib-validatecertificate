@@ -796,11 +796,11 @@ public class InformacioCertificat {
       String fieldName) {
     if (expected == null) {
       if (generated != null) {
-        errors.add("El valor del camp " + fieldName + " és diferent [" + expected + " | "
+        errors.add("El valor del camp " + fieldName + " és diferent EG [" + expected + " | "
             + generated + "]");
       }
     } else if (!expected.equals(generated)) {
-      errors.add("El valor del camp " + fieldName + " és diferent [" + expected + " | "
+      errors.add("El valor del camp " + fieldName + " és diferent EG [" + expected + " | "
           + generated + "]");
     }
     return null;
@@ -811,11 +811,11 @@ public class InformacioCertificat {
       String fieldName) {
     if (expected == null) {
       if (generated != null) {
-        errors.add("El valor del camp " + fieldName + " és diferent [" + expected + " | "
+        errors.add("El valor del camp " + fieldName + " és diferent EG [" + expected + " | "
             + generated + "]");
       }
     } else if (!expected.equalsIgnoreCase(generated)) {
-      errors.add("El valor del camp " + fieldName + " és diferent [" + expected + " | "
+      errors.add("El valor del camp " + fieldName + " és diferent EG [" + expected + " | "
           + generated + "]");
     }
     return null;

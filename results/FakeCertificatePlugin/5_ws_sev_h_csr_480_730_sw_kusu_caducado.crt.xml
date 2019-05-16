@@ -11,6 +11,7 @@
         <oiEuropeu>VATES-R0599999J</oiEuropeu>
         <organitzacio>[SOLO PRUEBAS] ENTIDAD</organitzacio>
         <pais>ES</pais>
+        <unitatOrganitzativa> OrganizationUnit=SEDE ELECTRONICA OrganizationUnit=PORTAL 060</unitatOrganitzativa>
         <usCertificat>digitalSignature | keyEncipherment</usCertificat>
         <usCertificatExtensio>KeyPurposeId 0:  TLS Web server authentication</usCertificatExtensio>
         <validDesDe>2018-06-27T13:46:50+02:00</validDesDe>

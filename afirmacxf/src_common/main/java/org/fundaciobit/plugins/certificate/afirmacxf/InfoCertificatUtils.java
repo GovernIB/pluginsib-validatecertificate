@@ -30,74 +30,84 @@ public class InfoCertificatUtils {
       //String key = camp.getIdCampo();
       String value = (String)camps.get(key);
       if ("tipoCertificado".equalsIgnoreCase(key)) {
-        dades.setTipusCertificat(value);
+        dades.setTipusCertificat(cleanValue(value));
         continue;
       }
       if ("subject".equalsIgnoreCase(key)) {
-        dades.setSubject(value);
+        dades.setSubject(cleanValue(value));
         continue;
       }
       if ("NombreApellidosResponsable".equalsIgnoreCase(key)) {
-        dades.setNomCompletResponsable(value);
+        dades.setNomCompletResponsable(cleanValue(value));
         continue;
       }
       if ("nombreResponsable".equalsIgnoreCase(key)) {
-        dades.setNomResponsable(value);
+        dades.setNomResponsable(cleanValue(value));
         continue;
       }
       if ("primerApellidoResponsable".equalsIgnoreCase(key)) {
-        dades.setPrimerLlinatgeResponsable(value);
+        dades.setPrimerLlinatgeResponsable(cleanValue(value));
         continue;
       }
       if ("segundoApellidoResponsable".equalsIgnoreCase(key)) {
-        dades.setSegonLlinatgeResponsable(value);
+        dades.setSegonLlinatgeResponsable(cleanValue(value));
         continue;
       }
       if ("NIFResponsable".equalsIgnoreCase(key)) {
-        dades.setNifResponsable(value);
+        dades.setNifResponsable(cleanValue(value));
         continue;
       }
       if ("idEmisor".equalsIgnoreCase(key)) {
-        dades.setEmissorID(value);
+        dades.setEmissorID(cleanValue(value));
         continue;
       }
       if ("NIF-CIF".equalsIgnoreCase(key)) {
-        dades.setUnitatOrganitzativaNifCif(value);
+        dades.setUnitatOrganitzativaNifCif(cleanValue(value));
         continue;
       }
       if ("email".equalsIgnoreCase(key)) {
-        dades.setEmail(value);
+        dades.setEmail(cleanValue(value));
         continue;
       }
       if ("fechaNacimiento".equalsIgnoreCase(key)) {
-        dades.setDataNaixement(value);
+        dades.setDataNaixement(cleanValue(value));
         continue;
       }
       if ("razonSocial".equalsIgnoreCase(key)) {
-        dades.setRaoSocial(value);
+        dades.setRaoSocial(cleanValue(value));
         continue;
       }
       if ("clasificacion".equalsIgnoreCase(key)) {
-        dades.setClassificacio(Integer.parseInt(value));
+        try {
+          dades.setClassificacio(Integer.parseInt(value));
+        } catch(NumberFormatException nfe) {
+          log.error("Error parsejant el valor de 'clasificacion' ]" + value + "[:" + nfe.getMessage(), nfe);
+        }
         continue;
       }
       if ("numeroSerie".equalsIgnoreCase(key)) {
-        dades.setNumeroSerie(new BigInteger(value));
+        if (cleanValue(value) != null) {
+          try {
+            dades.setNumeroSerie(new BigInteger(value));
+          } catch(NumberFormatException nfe) {
+            log.error("Error parsejant el valor de 'numeroSerie' ]" + value + "[:" + nfe.getMessage(), nfe);
+          }
+        }
         continue;
       }
       if ("usoCertificado".equalsIgnoreCase(key)) {
-        dades.setUsCertificat(value);
+        dades.setUsCertificat(cleanValue(value));
         continue;
       }
       if ("extensionUsoCertificado".equalsIgnoreCase(key)) {
-        dades.setUsCertificatExtensio(value);
+        dades.setUsCertificatExtensio(cleanValue(value));
         continue;
       }
       if ("validoHasta".equalsIgnoreCase(key)) {
         try {
           dades.setValidFins(SDF.parse(value));
         } catch (ParseException e) {
-          log.error("Error desconegut parsejant la data de final " + value, e);
+          log.error("Error desconegut parsejant la data de final ]" + value + "[: " + e.getMessage(), e);
         }
         continue;
       }
@@ -105,73 +115,73 @@ public class InfoCertificatUtils {
         try {
           dades.setValidDesDe(SDF.parse(value));
         } catch (ParseException e) {
-          log.error("Error desconegut parsejant la data d'inici " + value, e);
+          log.error("Error desconegut parsejant la data d'inici  ]" + value + "[: " + e.getMessage(), e);
         }
         continue;
       }
 
       if ("politica".equalsIgnoreCase(key)) {
-        dades.setPolitica(value);
+        dades.setPolitica(cleanValue(value));
         continue;
       }
 
       if ("versionPolitica".equalsIgnoreCase(key)) {
-        dades.setPoliticaVersio(value);
+        dades.setPoliticaVersio(cleanValue(value));
         continue;
       }
 
       if ("idPolitica".equalsIgnoreCase(key)) {
-        dades.setPoliticaID(value);
+        dades.setPoliticaID(cleanValue(value));
         continue;
       }
 
       if ("OrganizacionEmisora".equalsIgnoreCase(key)) {
-        dades.setEmissorOrganitzacio(value);
+        dades.setEmissorOrganitzacio(cleanValue(value));
         continue;
       }
 
       if ("pais".equalsIgnoreCase(key)) {
-        dades.setPais(value);
+        dades.setPais(cleanValue(value));
         continue;
       }
 
       if ("unidadOrganizativa".equalsIgnoreCase(key)) {
-        dades.setUnitatOrganitzativa(value);
+        dades.setUnitatOrganitzativa(cleanValue(value));
         continue;
       }
       
       
       
       if ("ApellidosResponsable".equalsIgnoreCase(key)) {
-        dades.setLlinatgesResponsable(value);
+        dades.setLlinatgesResponsable(cleanValue(value));
         continue;
       }
       
       
       if ("ID_europeo".equalsIgnoreCase(key)) {
-        dades.setIdEuropeu(value);
+        dades.setIdEuropeu(cleanValue(value));
         continue;
       }
       
       if ("OI_Europeo".equalsIgnoreCase(key)) {
-        dades.setOiEuropeu(value);
+        dades.setOiEuropeu(cleanValue(value));
         continue;
       }
       
       
       if ("entidadSuscriptora".equalsIgnoreCase(key)) {
-        dades.setEntitatSubscriptoraNom(value);
+        dades.setEntitatSubscriptoraNom(cleanValue(value));
         continue;
       }
       
       
       if ("NIFEntidadSuscriptora".equalsIgnoreCase(key)) {
-        dades.setEntitatSubscriptoraNif(value);
+        dades.setEntitatSubscriptoraNif(cleanValue(value));
         continue;
       }
       
       if ("certClassification".equalsIgnoreCase(key)) {
-        dades.setClassificacioEidas(value);
+        dades.setClassificacioEidas(cleanValue(value));
         continue;
       }
       
@@ -187,13 +197,13 @@ public class InfoCertificatUtils {
       }
       
       if ("puesto".equalsIgnoreCase(key)) {
-        dades.setLlocDeFeina(value);
+        dades.setLlocDeFeina(cleanValue(value));
         continue;
       }
       
       
       if ("cargo".equalsIgnoreCase(key)) {
-        dades.setCarrec(value);
+        dades.setCarrec(cleanValue(value));
         continue;
       }
       
@@ -209,55 +219,71 @@ public class InfoCertificatUtils {
       }
 
       if ("organizacion".equalsIgnoreCase(key)) {
-        dades.setOrganitzacio(value);
+        dades.setOrganitzacio(cleanValue(value));
         continue;
       }
       
       if ("NombreDominioIP".equalsIgnoreCase(key)) {
-        dades.setNomDomini(value);
+        dades.setNomDomini(cleanValue(value));
         continue;
       }
       
-      if ("DenominacionSistemaComponente".equals(key)) {
-        dades.setDenominacioSistemaComponent(value);
+      if ("DenominacionSistemaComponente".equalsIgnoreCase(key)) {
+        dades.setDenominacioSistemaComponent(cleanValue(value));
         continue;
       }
       
-      if ("seudonimo".equals(key)) {
-        dades.setPseudonim(value);
+      if ("seudonimo".equalsIgnoreCase(key)) {
+        dades.setPseudonim(cleanValue(value));
         continue;
       }
       
-      if ("Documento representación".equals(key)) {
-        dades.setDocumentRepresentacio(value);
+      if ("Documento representación".equalsIgnoreCase(key)) {
+        dades.setDocumentRepresentacio(cleanValue(value));
         continue;
       }
       
       
       if ("numeroIdentificacionPersonal".equalsIgnoreCase(key)) {
-        dades.setNumeroIdentificacionPersonal(value);
+        dades.setNumeroIdentificacionPersonal(cleanValue(value));
         continue;
       }
 
       if ("QcCompliance".equalsIgnoreCase(key)) {
-        dades.setNumeroIdentificacionPersonal(value);
+        dades.setQcCompliance(cleanValue(value));
         continue;
       }
 
       if ("QcSSCD".equalsIgnoreCase(key)) {
-        dades.setNumeroIdentificacionPersonal(value);
+        dades.setQcSSCD(cleanValue(value));
         continue;
       }
 
       if ("IDlogOn".equalsIgnoreCase(key)) {
-        dades.setNumeroIdentificacionPersonal(value);
+        dades.setIdlogOn(cleanValue(value));
         continue;
       }
 
-      dades.getAltresValors().put(key, value);
+      if (cleanValue(value) != null) {
+        dades.getAltresValors().put(key, value);
+      }
 
     }
     return dades;
+  }
+  
+  
+  protected static String cleanValue(String value) {
+    if (value == null) {
+      return null;
+    }
+    
+    if (value.trim().length() == 0) {
+      return null;
+    }
+    
+    return value;
+    
   }
   
 }

@@ -14,12 +14,12 @@ import org.fundaciobit.pluginsib.core.utils.PluginsManager;
  * @author anadal(u80067)
  *
  */
-public class TestValidaCertificat extends
+public class AfirmaCXFTestCertificate extends
     org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate {
 
   public static void main(String[] args) {
 
-    new TestValidaCertificat().testValidateCertificate();
+    new AfirmaCXFTestCertificate().testValidateCertificate();
 
   }
 

@@ -44,3 +44,10 @@
 /afirmacxf-jboss7/.classpath
 /afirmacxf-jboss7/.project
 /afirmacxf-jboss7/config.properties.sample
+/afirmacxf-jboss7/target
+/certificats/SIA/CertificatSIA_CMN_partpublica.cer
+/certificats/SIA/MiguelAngelBenito.cer
+/results/AfirmaCxfCertificatePlugin/301_CertificatSIA_CMN_partpublica.cer.xml
+/results/FakeCertificatePlugin/300_MiguelAngelBenito.cer.xml
+/results/FakeCertificatePlugin/301_CertificatSIA_CMN_partpublica.cer.xml
+/results/expected/301_CertificatSIA_CMN_partpublica.cer.xml
