@@ -130,9 +130,6 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
       checkNullProperty(APPLICATION_ID, applicationID);
       
       boolean debug = "true".equals(getProperty(DEBUG, "false"));
-      
-      log.info("XYZ ZZZ ZZZ  debug ==> " + debug);
-      
 
       if (getProperty(AUTH_UP_USERNAME) != null) {
         String username = getProperty(AUTH_UP_USERNAME);
