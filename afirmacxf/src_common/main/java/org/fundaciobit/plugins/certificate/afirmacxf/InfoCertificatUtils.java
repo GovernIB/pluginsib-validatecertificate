@@ -228,7 +228,7 @@ public class InfoCertificatUtils {
         continue;
       }
       
-      if ("DenominacionSistemaComponente".equalsIgnoreCase(key)) {
+      if ("DenominaciónSistemaComponente".equalsIgnoreCase(key) || "DenominacionSistemaComponente".equalsIgnoreCase(key)) {
         dades.setDenominacioSistemaComponent(cleanValue(value));
         continue;
       }
