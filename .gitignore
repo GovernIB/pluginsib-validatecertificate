@@ -1,53 +1,36 @@
-/fake/.project
-/fake/.settings
-/fake/target
-/fake/.classpath
-/validatetester/validatetester-ear/.project
-/validatetester/validatetester-ear/.settings
-/validatetester/validatetester-ear/.gitignore
-/validatetester/validatetester-ejb/.classpath
-/validatetester/validatetester-ejb/.project
-/validatetester/validatetester-ejb/.settings
-/validatetester/validatetester-webapp/.settings
-/validatetester/validatetester-webapp/.classpath
-/validatetester/validatetester-webapp/.project
+# Excloure del repositori
+# Fitxers i directoris del Maven
+target/
+dependency-reduced-pom.xml
+# Fitxers de projecte de Eclipse
+.classpath
+.project
+.settings/
+# Fitxers de projecte de IntelliJ IDEA
+*.iml
+.idea/
+# Fitxers de projecte de Netbeans
+nb-configuration.xml
+#
+## Preexistents dins el projecte
+/proves.txt
 /validatetester/compil.bat
 /afirmacxf/deps.txt
-/afirmacxf/.settings
-/afirmacxf/.classpath
-/afirmacxf/.project
 /afirmacxf/config.properties
-/validatetester/validatetester-webapp/target
-/validatetester/validatetester-ejb/target
-/validatetester/validatetester-ear/target
+/afirmacxf/test.log
+/afirmacxf-jboss7/config.properties
+/afirmacxf-jboss7/config.properties.sample
 /validatetester/deps.txt
 /certificats/Kit-de-Certificados-de-Prueba-v9-3.zip
 /certificats/test.properties
 /certificats/CAIB
+/certificats/SIA/CertificatSIA_CMN_partpublica.cer
+/certificats/SIA/MiguelAngelBenito.cer
 /results/AfirmaCxfCertificatePlugin/299_anadal_empleatpublic.cer.xml
 /results/FakeCertificatePlugin/299_anadal_empleatpublic.cer.xml
 /results/expected/299_anadal_empleatpublic.cer.xml
-/afirma/.settings
-/afirma/.project
-/afirma/.classpath
-/afirma/target
-/api/.classpath
-/api/.project
-/api/.settings
-/fake/config.properties
-/afirmacxf/test.log
-/proves.txt
-/afirmacxf/target
-/api/target
-/afirmacxf-jboss7/.settings
-/afirmacxf-jboss7/config.properties
-/afirmacxf-jboss7/.classpath
-/afirmacxf-jboss7/.project
-/afirmacxf-jboss7/config.properties.sample
-/afirmacxf-jboss7/target
-/certificats/SIA/CertificatSIA_CMN_partpublica.cer
-/certificats/SIA/MiguelAngelBenito.cer
 /results/AfirmaCxfCertificatePlugin/301_CertificatSIA_CMN_partpublica.cer.xml
 /results/FakeCertificatePlugin/300_MiguelAngelBenito.cer.xml
 /results/FakeCertificatePlugin/301_CertificatSIA_CMN_partpublica.cer.xml
 /results/expected/301_CertificatSIA_CMN_partpublica.cer.xml
+/fake/config.properties
