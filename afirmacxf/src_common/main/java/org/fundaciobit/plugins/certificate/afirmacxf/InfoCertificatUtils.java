@@ -1,6 +1,7 @@
 package org.fundaciobit.plugins.certificate.afirmacxf;
 
 import java.math.BigInteger;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -17,12 +18,11 @@ import org.fundaciobit.plugins.certificate.InformacioCertificat;
 public class InfoCertificatUtils {
   
   private static final Logger log = Logger.getLogger(InfoCertificatUtils.class);
-  
-  private static final SimpleDateFormat SDF = new SimpleDateFormat(
-      "yyyy-MM-dd EEE HH:mm:ss Z", new Locale("es"));
 
-  
   public static InformacioCertificat processInfoCertificate(Map<String, Object> camps) {
+
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd EEE HH:mm:ss Z", new Locale("es"));
+
     InformacioCertificat dades = new InformacioCertificat();
 
     for (String key : camps.keySet()) {
@@ -105,7 +105,7 @@ public class InfoCertificatUtils {
       }
       if ("validoHasta".equalsIgnoreCase(key)) {
         try {
-          dades.setValidFins(SDF.parse(value));
+          dades.setValidFins(dateFormat.parse(value));
         } catch (ParseException e) {
           log.error("Error desconegut parsejant la data de final ]" + value + "[: " + e.getMessage(), e);
         }
@@ -113,7 +113,7 @@ public class InfoCertificatUtils {
       }
       if ("validoDesde".equalsIgnoreCase(key)) {
         try {
-          dades.setValidDesDe(SDF.parse(value));
+          dades.setValidDesDe(dateFormat.parse(value));
         } catch (ParseException e) {
           log.error("Error desconegut parsejant la data d'inici  ]" + value + "[: " + e.getMessage(), e);
         }
