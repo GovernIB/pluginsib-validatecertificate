@@ -17,6 +17,6 @@ KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
         <validDesDe>2016-07-01T18:05:41+02:00</validDesDe>
         <validFins>2019-07-01T18:05:41+02:00</validFins>
     </informacioCertificat>
-    <resultatValidacioCodi>0</resultatValidacioCodi>
-    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
+    <resultatValidacioCodi>-1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificat ha caducat</resultatValidacioDescripcio>
 </resultatValidacio>

@@ -15,7 +15,7 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.fundaciobit.pluginsib.core.utils.PluginsManager;
-import org.fundaciobit.plugins.certificate.ICertificatePlugin;
+import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 
 /**
  *

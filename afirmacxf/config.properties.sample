@@ -1,7 +1,7 @@
 
 
 # PLUGIN CLASS
-# org.fundaciobit.plugins.certificate.afirmacxf.AfirmaCxfCertificatePlugin
+# org.fundaciobit.pluginsib.validatecertificate.afirmacxf.AfirmaCxfCertificatePlugin
 
 # MODE_VALIDACIO_SIMPLE = 0;
 # MODE_VALIDACIO_AMB_REVOCACIO = 1;

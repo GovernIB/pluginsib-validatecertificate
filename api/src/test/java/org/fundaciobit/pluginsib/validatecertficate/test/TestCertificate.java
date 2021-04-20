@@ -17,9 +17,9 @@ import javax.xml.bind.PropertyException;
 import javax.xml.bind.Unmarshaller;
 
 import org.apache.log4j.Logger;
-import org.fundaciobit.plugins.certificate.ICertificatePlugin;
-import org.fundaciobit.plugins.certificate.InformacioCertificat;
-import org.fundaciobit.plugins.certificate.ResultatValidacio;
+import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
+import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
+import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
 
 /**

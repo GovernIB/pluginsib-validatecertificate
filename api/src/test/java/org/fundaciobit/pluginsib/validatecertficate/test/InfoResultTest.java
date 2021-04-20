@@ -1,6 +1,6 @@
 package org.fundaciobit.pluginsib.validatecertficate.test;
 
-import org.fundaciobit.plugins.certificate.ResultatValidacio;
+import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 
 /**
  * 

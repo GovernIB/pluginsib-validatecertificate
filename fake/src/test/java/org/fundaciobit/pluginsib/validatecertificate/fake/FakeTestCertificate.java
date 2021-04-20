@@ -4,10 +4,9 @@ import java.io.File;
 import java.util.Map;
 import java.util.Properties;
 
-import org.fundaciobit.plugins.certificate.ICertificatePlugin;
-import org.fundaciobit.plugins.certificate.InformacioCertificat;
-import org.fundaciobit.plugins.certificate.ResultatValidacio;
-import org.fundaciobit.plugins.certificate.fake.FakeCertificatePlugin;
+import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
+import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
+import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 import org.fundaciobit.pluginsib.core.utils.FileUtils;
 import org.fundaciobit.pluginsib.core.utils.PluginsManager;
 import org.fundaciobit.pluginsib.validatecertficate.test.InfoResultTest;

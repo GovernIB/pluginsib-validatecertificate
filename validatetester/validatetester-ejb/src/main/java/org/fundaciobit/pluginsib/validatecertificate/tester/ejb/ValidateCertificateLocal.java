@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.ejb.Local;
 
-import org.fundaciobit.plugins.certificate.ResultatValidacio;
+import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 import org.fundaciobit.pluginsib.validatecertificate.tester.utils.Plugin;
 
 /**

@@ -2,7 +2,7 @@ package org.fundaciobit.pluginsib.validatecertificate.tester.webapp.utils;
 
 import java.security.cert.X509Certificate;
 
-import org.fundaciobit.plugins.certificate.ResultatValidacio;
+import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 
 /**
  * 

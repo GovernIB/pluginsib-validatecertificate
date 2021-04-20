@@ -6,8 +6,8 @@ import java.util.List;
 import javax.ejb.Stateless;
 
 import org.apache.log4j.Logger;
-import org.fundaciobit.plugins.certificate.ICertificatePlugin;
-import org.fundaciobit.plugins.certificate.ResultatValidacio;
+import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
+import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 import org.fundaciobit.pluginsib.validatecertificate.tester.utils.Plugin;
 import org.fundaciobit.pluginsib.validatecertificate.tester.utils.ValidateCertificatePluginManager;
 
