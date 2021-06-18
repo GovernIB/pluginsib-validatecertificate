@@ -2,6 +2,7 @@ package org.fundaciobit.pluginsib.validatecertificate.afirmacxf;
 
 import java.math.BigInteger;
 import java.text.DateFormat;
+import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -13,15 +14,24 @@ import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
 /**
  * 
  * @author anadal(u80067)
- *
+ * @author areus
  */
 public class InfoCertificatUtils {
   
   private static final Logger log = Logger.getLogger(InfoCertificatUtils.class);
 
+  private static final DateFormatSymbols DATE_FORMAT_SYMBOLS = new DateFormatSymbols(new Locale("es"));
+
+  static {
+    // A qualque moment entre Java 7 i Java 11 les abreviatiures de dies varen passar tenir un "." al final:
+    // lun., mar., a no tenir-ne.... Atès que el format de dia que rebem du el dia abreviat però sense punt, hem de
+    // sobreescriure els simols.
+    DATE_FORMAT_SYMBOLS.setShortWeekdays(new String[] {"", "dom", "lun", "mar", "mié", "jue", "vie", "sáb"});
+  }
+
   public static InformacioCertificat processInfoCertificate(Map<String, Object> camps) {
 
-    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd EEE HH:mm:ss Z", new Locale("es"));
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd EEE HH:mm:ss Z", DATE_FORMAT_SYMBOLS);
 
     InformacioCertificat dades = new InformacioCertificat();
 
