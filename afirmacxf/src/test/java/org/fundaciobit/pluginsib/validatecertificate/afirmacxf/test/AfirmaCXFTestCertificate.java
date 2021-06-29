@@ -3,7 +3,6 @@ package org.fundaciobit.pluginsib.validatecertificate.afirmacxf.test;
 import java.io.File;
 import java.util.Properties;
 
-
 import org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate;
 import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.AfirmaCxfCertificatePlugin;
@@ -42,8 +41,7 @@ public class AfirmaCXFTestCertificate extends TestCertificate {
       resultsDir.mkdirs();
 
       final boolean printResuts = true;
-
-      final boolean stopWhenError = true;
+      final boolean stopWhenError = false;
 
       executeTests(plugin, testProp, resultsDir, expectedDir, printResuts, stopWhenError);
 

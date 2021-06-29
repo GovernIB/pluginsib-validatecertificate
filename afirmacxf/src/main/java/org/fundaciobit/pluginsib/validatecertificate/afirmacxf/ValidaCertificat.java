@@ -24,8 +24,8 @@ import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificad
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.MensajeSalida;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.MensajeSalida.Respuesta.Excepcion;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ResultadoValidacionInfo;
-import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.Validacion;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ValidacionService;
+import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ValidacionWS;
 
 /**
  * 
@@ -114,29 +114,20 @@ public class ValidaCertificat {
 
     String respostaXml = cridarValidarCertificado(certificatBase64, obtenirDadesCertificat, modeValidacio);
 
-    if (debug) {
-      log.debug(respostaXml);
-    }
-
     MensajeSalida ms = getMensajeSalidaFromXml(respostaXml);
 
     Excepcion ex = ms.getRespuesta().getExcepcion();
 
     if (ex == null) {
       
-      ResultadoValidacionInfo rvi;
-      
-      
-      rvi = ms.getRespuesta().getResultadoProcesamiento().getResultadoValidacion();
+      ResultadoValidacionInfo rvi = ms.getRespuesta().getResultadoProcesamiento().getResultadoValidacion();
 
       ResultatValidacio resultatValidacio = new ResultatValidacio();
-
       resultatValidacio.setResultatValidacioCodi(Integer.parseInt(rvi.getResultado()));
       resultatValidacio.setResultatValidacioDescripcio(rvi.getDescripcion());
 
       if (obtenirDadesCertificat) {
-        InfoCertificadoInfo infoCert = ms.getRespuesta().getResultadoProcesamiento()
-            .getInfoCertificado();
+        InfoCertificadoInfo infoCert = ms.getRespuesta().getResultadoProcesamiento().getInfoCertificado();
         resultatValidacio.setInformacioCertificat(getDadesCertificat(infoCert));
       }
       return resultatValidacio;
@@ -189,23 +180,12 @@ public class ValidaCertificat {
     return InfoCertificatUtils.processInfoCertificate(map);
   }
 
- 
-  
   // Cache
-  protected Validacion api = null;
-  
-  protected long lastConnection = 0;
+  private ValidacionWS api = null;
 
   private String cridarValidarCertificado(String certificatBase64,
       boolean obtenirDadesCertificat, int modeValidacio) throws Exception {
 
-    // Cada 10 minuts refem la comunicació
-    long now = System.currentTimeMillis();
-    if (lastConnection + 10 * 60 * 1000L < now) {
-      lastConnection = now;
-      api = null;
-    }
-    
     if (api == null) {
 
       ValidacionService service = new ValidacionService(new java.net.URL(getEndPoint() + "?wsdl"));
@@ -218,12 +198,14 @@ public class ValidaCertificat {
           HTTPClientPolicy policy = new HTTPClientPolicy();
           policy.setAllowChunking(false);
           conduit.setClient(policy);
-      }        
+      }
+
+      Map<String, Object> reqContext = ((BindingProvider) api).getRequestContext();
+      reqContext.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, getEndPoint());
+
+      clientHandler.addSecureHeader(api);
       
     }
-
-    Map<String, Object> reqContext = ((BindingProvider) api).getRequestContext();
-    reqContext.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, getEndPoint());
 
     String xmlPeticio = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
         + "<mensajeEntrada xmlns=\"http://afirmaws/ws/validacion\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" " +
@@ -233,14 +215,18 @@ public class ValidaCertificat {
         + "<idAplicacion>" + aplicacioId + "</idAplicacion>" + "<modoValidacion>"
         + modeValidacio + "</modoValidacion>" + "<obtenerInfo>" + obtenirDadesCertificat
         + "</obtenerInfo>" + "</parametros>" + "</mensajeEntrada>";
-    log.debug(xmlPeticio);
 
-    this.clientHandler.addSecureHeader(api);
+    if (debug) {
+      log.info("Petició: \n" + xmlPeticio);
+    }
 
     String xmlResposta = api.validarCertificado(xmlPeticio);
-    log.debug(xmlResposta);
-    return xmlResposta;
 
+    if (debug) {
+      log.info("Resposta: \n" + xmlResposta);
+    }
+
+    return xmlResposta;
   }
 
 }

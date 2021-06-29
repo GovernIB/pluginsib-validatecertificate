@@ -8,25 +8,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for ResultadoValidacionInfo complex type.
+ * &lt;p&gt;Java class for ResultadoValidacionInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="ResultadoValidacionInfo">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="resultado" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="ValidacionSimple" type="{http://afirmaws/ws/validacion}ValidacionSimpleInfo"/>
- *         &lt;element name="ValidacionEstado" type="{http://afirmaws/ws/validacion}ValidacionEstadoInfo" minOccurs="0"/>
- *         &lt;element name="ValidacionCadena" type="{http://afirmaws/ws/validacion}ValidacionCadenaInfo" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="ResultadoValidacionInfo"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="resultado" type="{http://www.w3.org/2001/XMLSchema}string"/&amp;gt;
+ *         &amp;lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/&amp;gt;
+ *         &amp;lt;element name="ValidacionSimple" type="{http://afirmaws/ws/validacion}ValidacionSimpleInfo"/&amp;gt;
+ *         &amp;lt;element name="ValidacionEstado" type="{http://afirmaws/ws/validacion}ValidacionEstadoInfo" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ValidacionCadena" type="{http://afirmaws/ws/validacion}ValidacionCadenaInfo" minOccurs="0"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

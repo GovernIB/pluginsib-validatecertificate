@@ -1,11 +1,13 @@
 package org.fundaciobit.pluginsib.validatecertificate.afirmacxf;
 
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.endpoint.Endpoint;
 import org.apache.cxf.frontend.ClientProxy;
 import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 import org.apache.wss4j.dom.WSConstants;
 import org.apache.wss4j.dom.handler.WSHandlerConstants;
-import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.Validacion;
+import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ValidacionWS;
 
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
@@ -21,33 +23,23 @@ import java.util.Map;
  */
 public class ClientHandlerUsernamePassword extends ClientHandler {
 
-  /**
-   * 
-   */
-  @SuppressWarnings("unused")
-  private static final long serialVersionUID = -2810301885896179645L;
   private final String username;
   private final String password;
 
-  /**
-   * @param username
-   * @param password
-   */
   public ClientHandlerUsernamePassword(String username, String password) {
     this.username = username;
     this.password = password;
   }
 
   @Override
-  public void addSecureHeader(Validacion api) {
+  public void addSecureHeader(ValidacionWS api) {
 
-    org.apache.cxf.endpoint.Client client = ClientProxy.getClient(api);
-    org.apache.cxf.endpoint.Endpoint cxfEndpoint = client.getEndpoint();
+    Client client = ClientProxy.getClient(api);
+    Endpoint cxfEndpoint = client.getEndpoint();
 
     Map<String, Object> outProps = new HashMap<String, Object>();
 
     outProps.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN);
-    // Specify our username
     outProps.put(WSHandlerConstants.USER, username);
 
     // for hashed password use:
@@ -57,36 +49,26 @@ public class ClientHandlerUsernamePassword extends ClientHandler {
 
     outProps.put(WSHandlerConstants.MUST_UNDERSTAND, "false");
 
-    outProps.put(WSHandlerConstants.ADD_USERNAMETOKEN_NONCE, WSConstants.NONCE_LN + " "
-        + WSConstants.CREATED_LN);
-
-    outProps.put("addUsernameTokenNonce", "true");
-    outProps.put("addUsernameTokenCreated", "true");
+    outProps.put(WSHandlerConstants.ADD_USERNAMETOKEN_NONCE, "true");
+    outProps.put(WSHandlerConstants.ADD_USERNAMETOKEN_CREATED, "true");
 
     // Callback used to retrieve password for given user.
     outProps.put(WSHandlerConstants.PW_CALLBACK_REF, new ClientPasswordCallback(password));
 
     WSS4JOutInterceptor wssOut = new WSS4JOutInterceptor(outProps);
     cxfEndpoint.getOutInterceptors().add(wssOut);
-
   }
 
   public static class ClientPasswordCallback implements CallbackHandler {
     final String password;
 
-    /**
-     * @param password
-     */
     public ClientPasswordCallback(String password) {
       super();
       this.password = password;
     }
 
     public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
-
       WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
-
-      // set the password for our message.
       pc.setPassword(password);
     }
 

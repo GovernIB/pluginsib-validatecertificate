@@ -1,6 +1,6 @@
 package org.fundaciobit.pluginsib.validatecertificate.afirmacxf;
 
-import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.Validacion;
+import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ValidacionWS;
 
 /**
  * 
@@ -9,8 +9,6 @@ import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificad
  */
 public abstract class ClientHandler {
 
-  
-
-  public abstract void addSecureHeader(Validacion api);
+  public abstract void addSecureHeader(ValidacionWS api);
   
 }
