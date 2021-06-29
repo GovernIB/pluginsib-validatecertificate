@@ -4,25 +4,21 @@ import java.io.File;
 import java.util.Properties;
 
 
+import org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate;
 import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.AfirmaCxfCertificatePlugin;
 import org.fundaciobit.pluginsib.core.utils.FileUtils;
 import org.fundaciobit.pluginsib.core.utils.PluginsManager;
+import org.junit.Test;
 
 /**
  * 
  * @author anadal(u80067)
  *
  */
-public class AfirmaCXFTestCertificate extends
-    org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate {
+public class AfirmaCXFTestCertificate extends TestCertificate {
 
-  public static void main(String[] args) {
-
-    new AfirmaCXFTestCertificate().testValidateCertificate();
-
-  }
-
+  @Test
   public void testValidateCertificate() {
     try {
       

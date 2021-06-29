@@ -11,4 +11,8 @@ dependency-reduced-pom.xml
 .idea/
 # Fitxers de projecte de Netbeans
 nb-configuration.xml
-
+#
+#
+# Fitxers necessaris per test
+/afirmacxf/config.properties
+/certificats/test.properties

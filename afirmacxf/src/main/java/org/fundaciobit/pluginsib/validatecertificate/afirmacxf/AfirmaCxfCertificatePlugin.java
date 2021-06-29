@@ -41,48 +41,27 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
   public static final String AUTH_KS_CERT_PASSWORD = BASE_PROPERTIES
       + "authorization.ks.cert.password";
 
-  
-  
-  
-  /**
-   * 
-   */
   public AfirmaCxfCertificatePlugin() {
     super();
   }
 
-  /**
-   * @param propertyKeyBase
-   * @param properties
-   */
   public AfirmaCxfCertificatePlugin(String propertyKeyBase, Properties properties) {
     super(propertyKeyBase, properties);
   }
 
-  /**
-   * @param propertyKeyBase
-   */
   public AfirmaCxfCertificatePlugin(String propertyKeyBase) {
     super(propertyKeyBase);
   }
 
   @Override
   public ResultatValidacio getInfoCertificate(X509Certificate certificat) throws Exception {
-
-    final boolean obtenirDadesCertificat = true;
-
-    ResultatValidacio rv = checkValidaCertificat(certificat, obtenirDadesCertificat);
-
-    return rv;
-
+    return checkValidaCertificat(certificat, true);
   }
 
   @Override
   public String checkCertificate(X509Certificate cert) throws Exception {
-
-    log.info("AfirmaCxfCertificatePlugin::checkCertificate()");
+    log.debug("AfirmaCxfCertificatePlugin::checkCertificate()");
     try {
-
       final boolean obtenirDadesCertificat = false;
       ResultatValidacio rv = checkValidaCertificat(cert, obtenirDadesCertificat);
 
@@ -98,18 +77,14 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
       }
 
     } catch (Exception e) {
-
       log.error("Error no controlat cridant a @firma " + e.getMessage(), e);
-
       return e.getMessage();
     }
-
   }
 
   private ResultatValidacio checkValidaCertificat(X509Certificate cert,
       boolean obtenirDadesCertificat) throws Exception {
 
-   
     if (validaCertificat == null) {
       
       log.debug("Valida Certificat instance es NULL");
@@ -154,12 +129,7 @@ public class AfirmaCxfCertificatePlugin extends AbstractPluginProperties
 
     }
 
-    // int modeValidacio = ValidaCertificat.MODE_VALIDACIO_CADENA;
-    // int modeValidacio = ValidaCertificat.MODE_VALIDACIO_SIMPLE;
-
-    ResultatValidacio rv = validaCertificat.validar(cert, obtenirDadesCertificat);
-
-    return rv;
+    return validaCertificat.validar(cert, obtenirDadesCertificat);
   }
 
   private void checkNullProperty(String key, String value) throws Exception {

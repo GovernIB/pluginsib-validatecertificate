@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.ws.BindingProvider;
 
@@ -38,7 +39,15 @@ public class ValidaCertificat {
   public static final int MODE_VALIDACIO_AMB_REVOCACIO = 1;
   public static final int MODE_VALIDACIO_CADENA = 2;
 
+  private static final JAXBContext jaxbContext;
 
+  static {
+    try {
+      jaxbContext = JAXBContext.newInstance(MensajeSalida.class);
+    } catch (JAXBException e) {
+      throw new RuntimeException(e);
+    }
+  }
 
   protected final Logger log = Logger.getLogger(getClass());
 
@@ -93,8 +102,7 @@ public class ValidaCertificat {
   }
 
   private MensajeSalida getMensajeSalidaFromXml(String xml) throws Exception {
-    JAXBContext context = JAXBContext.newInstance(MensajeSalida.class);
-    Unmarshaller unMarshaller = context.createUnmarshaller();
+    Unmarshaller unMarshaller = jaxbContext.createUnmarshaller();
     MensajeSalida ms = (MensajeSalida) unMarshaller.unmarshal(new StringReader(xml));
     return ms;
   }
@@ -104,22 +112,15 @@ public class ValidaCertificat {
 
     String certificatBase64 = Base64.getEncoder().encodeToString(data);
 
-    String respostaXml = cridarValidarCertificado(certificatBase64, obtenirDadesCertificat,
-        modeValidacio);
+    String respostaXml = cridarValidarCertificado(certificatBase64, obtenirDadesCertificat, modeValidacio);
 
     if (debug) {
-      log.info(respostaXml);
+      log.debug(respostaXml);
     }
 
     MensajeSalida ms = getMensajeSalidaFromXml(respostaXml);
 
-    
     Excepcion ex = ms.getRespuesta().getExcepcion();
-    
-    if (ex != null) {
-      log.error("Exception = " + ex);
-    }
-
 
     if (ex == null) {
       
@@ -142,13 +143,13 @@ public class ValidaCertificat {
 
     } else {
 
-      
+      log.error("Exception = " + ex);
 
-      StringBuffer str = new StringBuffer();
+      StringBuilder str = new StringBuilder();
 
       String codigoError = ex.getCodigoError();
       if (codigoError != null) {
-        str.append("codigoError: " + codigoError);
+        str.append("codigoError: ").append(codigoError);
       }
 
       String descripcionError = ex.getDescripcion();
@@ -156,7 +157,7 @@ public class ValidaCertificat {
         if (str.length() != 0) {
           str.append("\n");
         }
-        str.append("descripcionError: " + descripcionError);
+        str.append("descripcionError: ").append(descripcionError);
       }
 
       String excepcionAsociada = ex.getExcepcionAsociada();
@@ -164,7 +165,7 @@ public class ValidaCertificat {
         if (str.length() != 0) {
           str.append("\n");
         }
-        str.append("excepcionAsociada: " + excepcionAsociada);
+        str.append("excepcionAsociada: ").append(excepcionAsociada);
       }
 
       throw new Exception(str.toString());
@@ -179,7 +180,7 @@ public class ValidaCertificat {
 
     List<Campo> camps = infoCert.getCampo();
     
-    Map<String, Object> map = new HashMap<String, Object>();
+    Map<String, Object> map = new HashMap<>();
     
     for (Campo campo : camps) {
       map.put(campo.getIdCampo(), campo.getValorCampo());
@@ -225,7 +226,8 @@ public class ValidaCertificat {
     reqContext.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, getEndPoint());
 
     String xmlPeticio = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-        + "<mensajeEntrada xmlns=\"http://afirmaws/ws/validacion\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:SchemaLocation=\"https://localhost/afirmaws/xsd/mvalidacion/ws.xsd\">"
+        + "<mensajeEntrada xmlns=\"http://afirmaws/ws/validacion\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" " +
+            "xsi:SchemaLocation=\"https://localhost/afirmaws/xsd/mvalidacion/ws.xsd\">"
         + "<peticion>ValidarCertificado</peticion>" + "<versionMsg>1.0</versionMsg>"
         + "<parametros>" + "<certificado><![CDATA[" + certificatBase64 + "]]></certificado>"
         + "<idAplicacion>" + aplicacioId + "</idAplicacion>" + "<modoValidacion>"

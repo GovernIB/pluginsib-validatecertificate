@@ -4,27 +4,23 @@ import java.io.File;
 import java.util.Map;
 import java.util.Properties;
 
+import org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate;
 import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
 import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 import org.fundaciobit.pluginsib.core.utils.FileUtils;
 import org.fundaciobit.pluginsib.core.utils.PluginsManager;
 import org.fundaciobit.pluginsib.validatecertficate.test.InfoResultTest;
+import org.junit.Test;
 
 /**
  * 
  * @author anadal(u80067)
  *
  */
-public class FakeTestCertificate extends
-    org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate {
+public class FakeTestCertificate extends TestCertificate {
 
-  public static void main(String[] args) {
-
-    new FakeTestCertificate().testValidateCertificate();
-
-  }
-
+  @Test
   public void testValidateCertificate() {
     try {
 
