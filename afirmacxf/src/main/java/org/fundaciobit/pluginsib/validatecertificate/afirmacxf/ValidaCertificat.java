@@ -2,6 +2,7 @@ package org.fundaciobit.pluginsib.validatecertificate.afirmacxf;
 
 import java.io.StringReader;
 import java.security.cert.X509Certificate;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,8 +25,6 @@ import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificad
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ResultadoValidacionInfo;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.Validacion;
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ValidacionService;
-
-import sun.misc.BASE64Encoder;
 
 /**
  * 
@@ -103,7 +102,7 @@ public class ValidaCertificat {
   public ResultatValidacio validar(byte[] data, boolean obtenirDadesCertificat)
       throws Exception {
 
-    String certificatBase64 = new BASE64Encoder().encode(data);
+    String certificatBase64 = Base64.getEncoder().encodeToString(data);
 
     String respostaXml = cridarValidarCertificado(certificatBase64, obtenirDadesCertificat,
         modeValidacio);
@@ -173,7 +172,6 @@ public class ValidaCertificat {
 
   }
 
-  @SuppressWarnings("unchecked")
   private InformacioCertificat getDadesCertificat(InfoCertificadoInfo infoCert) {
     if (infoCert == null) {
       return null;

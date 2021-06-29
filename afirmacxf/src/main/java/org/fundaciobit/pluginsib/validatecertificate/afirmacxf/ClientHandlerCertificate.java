@@ -1,18 +1,17 @@
 package org.fundaciobit.pluginsib.validatecertificate.afirmacxf;
 
+import org.apache.cxf.frontend.ClientProxy;
+import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
+import org.apache.wss4j.common.ext.WSPasswordCallback;
+import org.apache.wss4j.dom.handler.WSHandlerConstants;
+import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.Validacion;
+
+import javax.security.auth.callback.Callback;
+import javax.security.auth.callback.CallbackHandler;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-
-import org.apache.cxf.frontend.ClientProxy;
-import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
-import org.apache.ws.security.WSPasswordCallback;
-import org.apache.ws.security.handler.WSHandlerConstants;
-import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.Validacion;
 
 /**
  * 
@@ -34,7 +33,7 @@ public class ClientHandlerCertificate extends ClientHandler {
   private String keystoreCertPassword;
 
   public ClientHandlerCertificate(String keystoreLocation, String keystoreType,
-      String keystorePassword, String keystoreCertAlias, String keystoreCertPassword) {
+                                  String keystorePassword, String keystoreCertAlias, String keystoreCertPassword) {
     this.keystoreLocation = keystoreLocation;
     this.keystoreType = keystoreType;
     this.keystorePassword = keystorePassword;
