@@ -1,6 +1,12 @@
 package org.fundaciobit.pluginsib.validatecertificate.afirmacxf.test;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.Iterator;
 import java.util.Properties;
 
 import org.fundaciobit.pluginsib.validatecertficate.test.TestCertificate;
@@ -16,6 +22,26 @@ import org.junit.Test;
  *
  */
 public class AfirmaCXFTestCertificate extends TestCertificate {
+    
+    
+    public static void main(String[] args) {
+
+        try {
+            Enumeration<URL> resEnum;
+            resEnum = AfirmaCXFTestCertificate.class.getClassLoader()
+                    .getResources("javax/xml/namespace/QName.class");
+
+            ArrayList<URL> resources = Collections.list(resEnum);
+            for (Iterator<URL> iterator = resources.iterator(); iterator.hasNext();) {
+                URL url = (URL) iterator.next();
+                System.out.println(url);
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    
 
   @Test
   public void testValidateCertificate() {

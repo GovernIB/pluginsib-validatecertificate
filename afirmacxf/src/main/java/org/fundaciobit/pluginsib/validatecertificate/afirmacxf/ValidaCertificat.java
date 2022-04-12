@@ -32,7 +32,6 @@ import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificad
  * @author anadal
  * 
  */
-@SuppressWarnings("restriction")
 public class ValidaCertificat {
 
   public static final int MODE_VALIDACIO_SIMPLE = 0;
