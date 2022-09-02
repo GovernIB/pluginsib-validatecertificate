@@ -36,6 +36,10 @@ public class AfirmaCXFTestCertificate extends TestCertificate {
                 URL url = (URL) iterator.next();
                 System.out.println(url);
             }
+            
+            new AfirmaCXFTestCertificate().testValidateCertificate();
+            
+            
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
