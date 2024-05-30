@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=Herritar eta Erakundeen CA - CA de Ciudadanos y Entidades (4),OU=NZZ Ziurtagiri publikoa - Certificado publico SCI,O=IZENPE S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNom>Ziurtapen eta Zerbitzu Enpresa S.A.</entitatSubscriptoraNom>
+        <llinatgesResponsable>FICTICIO ACTIVO</llinatgesResponsable>
+        <nifResponsable>99999976R</nifResponsable>
+        <nomCompletResponsable>SELLOENTIDAD FICTICIO ACTIVO</nomCompletResponsable>
+        <nomResponsable>SELLOENTIDAD</nomResponsable>
+        <numeroSerie>1005690</numeroSerie>
+        <oiEuropeu>VATES-A01111111</oiEuropeu>
+        <organitzacio>Ziurtapen eta Zerbitzu Enpresa S.A.</organitzacio>
+        <pais>ES</pais>
+        <primerLlinatgeResponsable>FICTICIO</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>ACTIVO</segonLlinatgeResponsable>
+        <unitatOrganitzativa>Zigilu elektronikoa - Sello electronico</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2021-04-14T16:50:14+02:00</validDesDe>
+        <validFins>2024-04-14T16:50:14+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>-1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificat ha caducat</resultatValidacioDescripcio>
+</resultatValidacio>

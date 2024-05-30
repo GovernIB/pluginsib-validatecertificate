@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=Herritar eta Erakundeen CA - CA de Ciudadanos y Entidades (4),OU=NZZ Ziurtagiri publikoa - Certificado publico SCI,O=IZENPE S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNom>IZENPE</entitatSubscriptoraNom>
+        <llinatgesResponsable>FICTICIO ACTIVO</llinatgesResponsable>
+        <nifResponsable>99999970H</nifResponsable>
+        <nomCompletResponsable>PROFESIONAL FICTICIO ACTIVO</nomCompletResponsable>
+        <nomResponsable>PROFESIONAL</nomResponsable>
+        <numeroSerie>1039956</numeroSerie>
+        <oiEuropeu>VATES-Q0199999D</oiEuropeu>
+        <organitzacio>IZENPE</organitzacio>
+        <pais>ES</pais>
+        <primerLlinatgeResponsable>FICTICIO</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>ACTIVO</segonLlinatgeResponsable>
+        <unitatOrganitzativa> OrganizationUnit=DEPARTAMENTO OrganizationUnit=Ziurtagiri Profesionala - Certificado Profesional</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2021-05-27T17:29:45+02:00</validDesDe>
+        <validFins>2025-05-27T17:29:45+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
+</resultatValidacio>

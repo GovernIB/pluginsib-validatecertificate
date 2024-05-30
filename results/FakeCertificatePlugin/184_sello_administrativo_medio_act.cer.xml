@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=EAEko HAetako langileen CA - CA personal de AAPP vascas (2),OU=AZZ Ziurtagiri publikoa - Certificado publico SCA,O=IZENPE S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNom>EMPRESA FICTICIA</entitatSubscriptoraNom>
+        <nifResponsable>Q0199999D</nifResponsable>
+        <numeroSerie>219935</numeroSerie>
+        <oiEuropeu>VATES-Q0199999D</oiEuropeu>
+        <organitzacio>EMPRESA FICTICIA</organitzacio>
+        <pais>ES</pais>
+        <unitatOrganitzativa>SELLO ELECTRONICO</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2021-05-31T17:12:09+02:00</validDesDe>
+        <validFins>2024-05-31T17:12:09+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
+</resultatValidacio>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>11</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <llinatgesResponsable>Apellido1 Apellido2</llinatgesResponsable>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>Nombre Apellido1 Apellido2</nomCompletResponsable>
+        <nomResponsable>Nombre</nomResponsable>
+        <numeroSerie>55116810750613467997377519895647293365</numeroSerie>
+        <oiEuropeu>VATES-Q0000000J</oiEuropeu>
+        <organitzacio>Organización</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.12.1,0.4.0.194112.1.2,2.16.724.1.3.5.8</politica>
+        <politicaID>DEFAULT</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>Apellido1</primerLlinatgeResponsable>
+        <raoSocial>Organización</raoSocial>
+        <segonLlinatgeResponsable>Apellido2</segonLlinatgeResponsable>
+        <subject>CN=99999999R Nombre Apellido1 (R:Q0000000J),serialNumber=99999999R,givenName=Nombre,SN=Apellido1 Apellido2,2.5.4.97=#0C0F56415445532D51303030303030304A,O=Organización,C=ES</subject>
+        <tipusCertificat>FP PF Corporativo Representante Voluntario frente AAPP HW</tipusCertificat>
+        <unitatOrganitzativaNifCif>Q0000000J</unitatOrganitzativaNifCif>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  1.2.840.113583.1.1.5</usCertificatExtensio>
+        <validDesDe>2022-04-26T16:53:28+02:00</validDesDe>
+        <validFins>2027-04-25T16:53:27+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

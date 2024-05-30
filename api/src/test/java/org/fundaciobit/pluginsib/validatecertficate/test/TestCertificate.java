@@ -16,172 +16,184 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.PropertyException;
 import javax.xml.bind.Unmarshaller;
 
-import org.apache.log4j.Logger;
 import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
 import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
-import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
+import org.jboss.logging.Logger;
+import org.fundaciobit.pluginsib.core.v3.utils.CertificateUtils;
 
 /**
  * 
  * @author anadal
  *
  */
-public class TestCertificate  {
+public class TestCertificate {
 
-  public Logger log = Logger.getLogger(TestCertificate.class);
+    public Logger log = Logger.getLogger(TestCertificate.class);
 
-  protected Map<String, InfoResultTest> executeTests(ICertificatePlugin plugin,
-      Properties testProp, File resultsDir, File expectedDir, boolean printResult,
-      boolean stopWhenError) throws JAXBException, Exception, FileNotFoundException,
-      PropertyException {
-    String testsStr = testProp.getProperty("tests");
+    protected Map<String, InfoResultTest> executeTests(ICertificatePlugin plugin, Properties testProp, File resultsDir,
+            File expectedDir, boolean printResult, boolean stopWhenError)
+            throws JAXBException, Exception, FileNotFoundException, PropertyException {
+        String testsStr = testProp.getProperty("tests");
 
-    String[] tests = testsStr.split(",");
-    
-    System.out.println("");
-    
+        String[] tests = testsStr.split(",");
 
-    JAXBContext jaxbContext = JAXBContext.newInstance(ResultatValidacio.class);
-    Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+        System.out.println("");
 
-    Unmarshaller jaxbUnMarshaller = jaxbContext.createUnmarshaller();
+        JAXBContext jaxbContext = JAXBContext.newInstance(ResultatValidacio.class);
+        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
-    Map<String, InfoResultTest> resultats = new HashMap<String, InfoResultTest>();
+        Unmarshaller jaxbUnMarshaller = jaxbContext.createUnmarshaller();
 
-    for (int i = 0; i < tests.length; i++) {
+        Map<String, InfoResultTest> resultats = new HashMap<String, InfoResultTest>();
 
-      String name = tests[i];
+        for (int i = 0; i < tests.length; i++) {
 
-      System.out.println(" =============== TEST [" + name + "] ================");
+            String name = tests[i];
 
-      try {
+            System.out.println(" =============== TEST [" + name + "] ================");
 
-        String certInfo = testProp.getProperty(name);
+            try {
 
-        X509Certificate certificat;
-        File certFile;
+                String certInfo = testProp.getProperty(name);
 
-        if (certInfo.indexOf('|') == -1) {
+                X509Certificate certificat;
+                File certFile;
 
-          // Certificat tipus .cer
+                if (certInfo.indexOf('|') == -1) {
 
-          certFile = new File(certInfo);
+                    // Certificat tipus .cer
 
-          certificat = CertificateUtils.decodeCertificate(new FileInputStream(certFile));
+                    certFile = new File(certInfo);
 
-        } else {
-          // Certificat tipus .p12
+                    certificat = CertificateUtils.decodeCertificate(new FileInputStream(certFile));
 
-          String[] fields = certInfo.split("\\|");
+                } else {
+                    // Certificat tipus .p12
 
-          String filePath = fields[0];
-          String passwordks = fields[1];
+                    String[] fields = certInfo.split("\\|");
 
-          certFile = new File(filePath);
+                    String filePath = fields[0];
+                    String passwordks = fields[1];
 
-          List<Certificate> cc = CertificateUtils.readCertificatesOfKeystore(
-              new FileInputStream(certFile), passwordks);
-          if (cc == null || cc.size() == 0) {
-            throw new Exception("Certificat amb id " + name + " esta buit.");
-          }
-          certificat = (X509Certificate) cc.get(0);
+                    certFile = new File(filePath);
 
-        }
+                    List<Certificate> cc = CertificateUtils.readCertificatesOfKeystore(new FileInputStream(certFile),
+                            passwordks);
+                    if (cc == null || cc.size() == 0) {
+                        throw new Exception("Certificat amb id " + name + " esta buit.");
+                    }
+                    certificat = (X509Certificate) cc.get(0);
 
-        ResultatValidacio rv = plugin.getInfoCertificate(certificat);
+                }
 
-        String filename = tests[i] + "_" + certFile.getName() + ".xml";
-        File file = new File(resultsDir, filename);
+                ResultatValidacio rv = plugin.getInfoCertificate(certificat);
 
-        // output pretty printed
-        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+                String filename = tests[i] + "_" + certFile.getName() + ".xml";
+                File file = new File(resultsDir, filename);
 
-        jaxbMarshaller.marshal(rv, file);
+                // output pretty printed
+                jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-        File expectedFile = new File(expectedDir, filename);
+                jaxbMarshaller.marshal(rv, file);
 
-        String[] errorsComparacio = null;
-        String warning = null;
+                File expectedFile = new File(expectedDir, filename);
 
-        ResultatValidacio expected = null;
-        if (expectedFile.exists()) {
-          // Podem Comparar
-          expected = (ResultatValidacio) jaxbUnMarshaller
-              .unmarshal(new FileInputStream(expectedFile));
+                String[] errorsComparacio = null;
+                String warning = null;
 
-          errorsComparacio = compare(expected, rv);
+                ResultatValidacio expected = null;
+                if (expectedFile.exists()) {
+                    // Podem Comparar
+                    expected = (ResultatValidacio) jaxbUnMarshaller.unmarshal(new FileInputStream(expectedFile));
 
-          if (errorsComparacio != null) {
-            if (printResult) {
-              System.out.flush();
-              System.err.flush();
-              System.err.println("El resultat del test " + name
-                  + " no és l'esperat. Diferències(" + errorsComparacio.length + "): ");
-              
-              
-              for(String e: errorsComparacio) {
-                System.err.println("  + " + e);
-              }
-              
-              
-              System.err.flush();
+                    errorsComparacio = compare(expected, rv);
+
+                    if (errorsComparacio != null) {
+                        if (printResult) {
+                            System.out.flush();
+                            System.err.flush();
+                            System.err.println();
+                            System.err.println();
+                            System.err.println("El resultat del test " + name + " no és l'esperat. Diferències("
+                                    + errorsComparacio.length + ") [ esperat | retornat ]: ");
+                                                        
+
+                            for (String e : errorsComparacio) {
+                                System.err.println("  + " + e);
+                            }
+                            System.err.println();
+                            System.err.println();
+                            System.err.flush();
+                        }
+                    }
+
+                } else {
+                    warning = " No existeix fitxer per comparar dins la carpeta expected ("
+                            + expectedFile.getAbsolutePath() + ")";
+                }
+
+                resultats.put(name, new InfoResultTest(expected, rv, errorsComparacio, warning));
+
+                if (printResult) {
+
+                    if (rv.getResultatValidacioCodi() != ResultatValidacio.RESULTAT_VALIDACIO_OK) {
+                        System.err.println("Error en la validació del certificat " + name + " amb codi "
+                                + rv.getResultatValidacioCodi());
+                        System.err.println("Resultat Validacio Codi: " + rv.getResultatValidacioCodi());
+                        System.err.println("Resultat Validacio Desc.: " + rv.getResultatValidacioDescripcio() + "\n");
+                        System.out.println(rv.getInformacioCertificat());
+
+                    } else {
+                        // OK
+                        System.out.println(rv.toString());
+                    }
+
+                }
+
+                if (errorsComparacio != null && stopWhenError) {
+                    return resultats;
+                }
+
+            } catch (Throwable th) {
+
+                th.printStackTrace(System.err);
+                resultats.put(name, new InfoResultTest(th));
+
+                if (stopWhenError) {
+                    return resultats;
+                }
+
             }
-          }
 
+        }
+
+        return resultats;
+    }
+
+    /**
+     * o1 valor esperat o2 valor generat
+     */
+    public static String[] compare(ResultatValidacio esperat, ResultatValidacio generat) {
+
+        InformacioCertificat icEsperat = esperat.getInformacioCertificat();
+        InformacioCertificat icGenerat = generat.getInformacioCertificat();
+
+        if (icEsperat != null) {
+            if (icGenerat == null) {
+                return new String[] { "icEsperat != null i icGenerat ==null" };
+            }
+            return icEsperat.compareTo(icGenerat);
+        }
+
+        if (icGenerat != null) {
+            // ic1 == null i ic2 !=null
+            return new String[] { "icEsperat == null i icGenerat !=null" };
         } else {
-          warning = " No existeix fitxer per comparar dins la carpeta expected (" + expectedFile.getAbsolutePath() + ")";
+            // ic1 es null i ic2 es null
+            return null;
         }
-
-        resultats.put(name, new InfoResultTest(expected, rv, errorsComparacio, warning));
-
-        if (printResult) {
-          System.out.println(rv.toString());
-        }
-
-        if (errorsComparacio != null && stopWhenError) {
-          return resultats;
-        }
-
-      } catch (Throwable th) {
-
-        th.printStackTrace(System.err);
-        resultats.put(name, new InfoResultTest(th));
-
-        if (stopWhenError) {
-          return resultats;
-        }
-
-      }
 
     }
-
-    return resultats;
-  }
-
-  /**
-   * o1 valor esperat o2 valor generat
-   */
-  public static String[] compare(ResultatValidacio esperat, ResultatValidacio generat) {
-
-    InformacioCertificat icEsperat = esperat.getInformacioCertificat();
-    InformacioCertificat icGenerat = generat.getInformacioCertificat();
-
-    if (icEsperat != null) {
-      if (icGenerat == null) {
-        return new String[] {"icEsperat != null i icGenerat ==null"};
-      }
-      return icEsperat.compareTo(icGenerat);
-    }
-
-    if (icGenerat != null) {
-      // ic1 == null i ic2 !=null
-      return new String[] { "icEsperat == null i icGenerat !=null" };
-    } else {
-      // ic1 es null i ic2 es null
-      return null;
-    }
-
-  }
 
 }

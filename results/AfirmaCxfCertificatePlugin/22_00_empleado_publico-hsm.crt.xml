@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <certificatQualificat>true</certificatQualificat>
+        <classificacio>5</classificacio>
+        <classificacioEidas>ESIG</classificacioEidas>
+        <email>info@firmaprofesional.com</email>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,serialNumber=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNif>Q0000000J</entitatSubscriptoraNif>
+        <entitatSubscriptoraNom>NOMBRE DE LA ORGANIZACIÓN</entitatSubscriptoraNom>
+        <idEuropeu>IDCES-99999999R</idEuropeu>
+        <llinatgesResponsable>APELLIDO1 APELLIDO2</llinatgesResponsable>
+        <llocDeFeina>CARGO</llocDeFeina>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>NOMBRE APELLIDO1 APELLIDO2</nomCompletResponsable>
+        <nomResponsable>NOMBRE</nomResponsable>
+        <numeroIdentificacionPersonal>11111111</numeroIdentificacionPersonal>
+        <numeroSerie>130197431548508950357910748500490022058</numeroSerie>
+        <organitzacio>NOMBRE DE LA ORGANIZACIÓN</organitzacio>
+        <pais>ES</pais>
+        <politica>1.3.6.1.4.1.13177.10.1.22.3,0.4.0.194112.1.2,2.16.724.1.3.5.7.1</politica>
+        <politicaID>DEFAULT</politicaID>
+        <politicaVersio>23</politicaVersio>
+        <primerLlinatgeResponsable>APELLIDO1</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>APELLIDO2</segonLlinatgeResponsable>
+        <subject>CN=NOMBRE APELLIDO1 APELLIDO2 - DNI 99999999R,serialNumber=IDCES-99999999R,givenName=NOMBRE,SN=APELLIDO1 APELLIDO2 - DNI 99999999R,T=CARGO,OU=CERTIFICADO ELECTRÓNICO DE EMPLEADO PÚBLICO,OU=DEPARTAMENTO,OU=11111111,O=NOMBRE DE LA ORGANIZACIÓN,C=ES</subject>
+        <tipusCertificat>FP PF Empleado Público DCCF Centralizado</tipusCertificat>
+        <unitatOrganitzativa> OrganizationUnit=11111111 OrganizationUnit=DEPARTAMENTO OrganizationUnit=CERTIFICADO ELECTRÓNICO DE EMPLEADO PÚBLICO</unitatOrganitzativa>
+        <usCertificat>nonRepudiation</usCertificat>
+        <validDesDe>2022-04-26T16:52:37+02:00</validDesDe>
+        <validFins>2026-04-25T16:52:36+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
+</resultatValidacio>

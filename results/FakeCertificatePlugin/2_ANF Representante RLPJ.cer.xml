@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <email>PABLO@ANF.ES</email>
+        <emissorID>CN=ANF Assured ID CA1,SERIALNUMBER=G63287510,EMAILADDRESS=info@anf.es,OU=ANF Autoridad Intermedia de Identidad,O=ANF Autoridad de Certificacion,L=Barcelona (see current address at http://www.anf.es/es/address-direccion.html ),ST=Barcelona,C=ES</emissorID>
+        <emissorOrganitzacio>ANF Autoridad de Certificacion</emissorOrganitzacio>
+        <entitatSubscriptoraNom>NOMBRE DE EMPRESA</entitatSubscriptoraNom>
+        <llinatgesResponsable>APELLIDO APELLIDO</llinatgesResponsable>
+        <nifResponsable>B00000000</nifResponsable>
+        <nomCompletResponsable>NOMBRE APELLIDO APELLIDO</nomCompletResponsable>
+        <nomResponsable>NOMBRE</nomResponsable>
+        <numeroSerie>995308442652898158201666551</numeroSerie>
+        <oiEuropeu>VATES-B00000000</oiEuropeu>
+        <organitzacio>NOMBRE DE EMPRESA</organitzacio>
+        <pais>ES</pais>
+        <primerLlinatgeResponsable>APELLIDO</primerLlinatgeResponsable>
+        <segonLlinatgeResponsable>APELLIDO</segonLlinatgeResponsable>
+        <unitatOrganitzativa>Certificado de Representante Legal de Persona Juridica (FIRMA)</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
+        <validDesDe>2022-09-14T10:01:15+02:00</validDesDe>
+        <validFins>2024-09-13T10:01:15+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
+</resultatValidacio>

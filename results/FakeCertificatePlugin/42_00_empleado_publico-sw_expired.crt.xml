@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=AC Firmaprofesional - CUALIFICADOS,SERIALNUMBER=A62634068,OU=Certificados Cualificados,O=Firmaprofesional S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>Firmaprofesional S.A.</emissorOrganitzacio>
+        <entitatSubscriptoraNom>NOMBRE DE LA ORGANIZACIÓN</entitatSubscriptoraNom>
+        <llinatgesResponsable>APELLIDO1 APELLIDO2 - DNI 99999999R</llinatgesResponsable>
+        <nifResponsable>99999999R</nifResponsable>
+        <nomCompletResponsable>NOMBRE APELLIDO1 APELLIDO2 - DNI 99999999R</nomCompletResponsable>
+        <nomResponsable>NOMBRE</nomResponsable>
+        <numeroSerie>30007553967663056382514395431105896574</numeroSerie>
+        <organitzacio>NOMBRE DE LA ORGANIZACIÓN</organitzacio>
+        <pais>ES</pais>
+        <primerLlinatgeResponsable>APELLIDO1 APELLIDO2 - DNI 99999999R</primerLlinatgeResponsable>
+        <unitatOrganitzativa> OrganizationUnit= OrganizationUnit=11111111 OrganizationUnit=DEPARTAMENTO OrganizationUnit=CERTIFICADO ELECTRÓNICO DE EMPLEADO PÚBLICO</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  1.2.840.113583.1.1.5</usCertificatExtensio>
+        <validDesDe>2022-04-26T16:52:53+02:00</validDesDe>
+        <validFins>2022-04-26T17:02:53+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>-1</resultatValidacioCodi>
+    <resultatValidacioDescripcio>El certificat ha caducat</resultatValidacioDescripcio>
+</resultatValidacio>

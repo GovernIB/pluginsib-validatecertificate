@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resultatValidacio>
+    <informacioCertificat>
+        <altresValors/>
+        <classificacio>-1</classificacio>
+        <emissorID>CN=Herritar eta Erakundeen CA - CA de Ciudadanos y Entidades (4),OU=NZZ Ziurtagiri publikoa - Certificado publico SCI,O=IZENPE S.A.,C=ES</emissorID>
+        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
+        <llinatgesResponsable>FICTICIO</llinatgesResponsable>
+        <nifResponsable>99999990S</nifResponsable>
+        <nomCompletResponsable>CIUDADANO FICTICIO</nomCompletResponsable>
+        <nomResponsable>CIUDADANO</nomResponsable>
+        <numeroSerie>1042004</numeroSerie>
+        <pais>ES</pais>
+        <primerLlinatgeResponsable>FICTICIO</primerLlinatgeResponsable>
+        <unitatOrganitzativa> OrganizationUnit= OrganizationUnit=Ziurtagiri onartua - Certificado reconocido OrganizationUnit=Herritar ziurtagiria - Certificado de ciudadano OrganizationUnit=Condiciones de uso en www.izenpe.com nola erabili jakiteko</unitatOrganitzativa>
+        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
+        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  1.3.6.1.4.1.311.10.3.12</usCertificatExtensio>
+        <validDesDe>2021-05-31T16:51:47+02:00</validDesDe>
+        <validFins>2025-05-31T16:51:47+02:00</validFins>
+    </informacioCertificat>
+    <resultatValidacioCodi>0</resultatValidacioCodi>
+    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
+</resultatValidacio>

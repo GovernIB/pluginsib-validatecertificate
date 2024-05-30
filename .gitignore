@@ -16,3 +16,4 @@ nb-configuration.xml
 # Fitxers necessaris per test
 /afirmacxf/config.properties
 /certificats/test.properties
+/fake/config.properties

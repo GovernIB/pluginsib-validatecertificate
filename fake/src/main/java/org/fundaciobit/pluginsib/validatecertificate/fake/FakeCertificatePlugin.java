@@ -11,11 +11,12 @@ import java.security.cert.X509Certificate;
 import javax.naming.ldap.LdapName;
 import javax.naming.ldap.Rdn;
 
-import org.apache.log4j.Logger;
+
 import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
 import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
-import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
+import org.jboss.logging.Logger;
+import org.fundaciobit.pluginsib.core.v3.utils.CertificateUtils;
 
 /**
  *
