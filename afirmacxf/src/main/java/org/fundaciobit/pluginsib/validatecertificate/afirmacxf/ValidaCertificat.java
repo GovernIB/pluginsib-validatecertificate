@@ -33,6 +33,8 @@ import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificad
 import org.fundaciobit.pluginsib.validatecertificate.afirmacxf.validarcertificadoapi.ValidacionWS;
 import org.jboss.logging.Logger;
 
+
+
 /**
  * 
  * @author anadal

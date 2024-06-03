@@ -9,14 +9,15 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.xml.bind.annotation.XmlRootElement;
+
+
+
 
 /**
  * Informació sobre un certificat
  * 
  * @author anadal
  */
-@XmlRootElement
 public class InformacioCertificat {
 
     // certClassification:

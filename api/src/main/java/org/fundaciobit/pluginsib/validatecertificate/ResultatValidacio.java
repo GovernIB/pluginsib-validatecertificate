@@ -1,13 +1,11 @@
 package org.fundaciobit.pluginsib.validatecertificate;
 
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * 
  * @author anadal
  * 
  */
-@XmlRootElement
 public class ResultatValidacio {
 
     public static final int RESULTAT_VALIDACIO_OK = 0;

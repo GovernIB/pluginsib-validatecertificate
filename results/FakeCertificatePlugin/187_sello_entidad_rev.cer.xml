@@ -1,28 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<resultatValidacio>
-    <informacioCertificat>
-        <altresValors/>
-        <classificacio>-1</classificacio>
-        <emissorID>CN=Herritar eta Erakundeen CA - CA de Ciudadanos y Entidades (4),OU=NZZ Ziurtagiri publikoa - Certificado publico SCI,O=IZENPE S.A.,C=ES</emissorID>
-        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
-        <entitatSubscriptoraNom>Ziurtapen eta Zerbitzu Enpresa S.A.</entitatSubscriptoraNom>
-        <llinatgesResponsable>FICTICIO REVOCADO</llinatgesResponsable>
-        <nifResponsable>99999976R</nifResponsable>
-        <nomCompletResponsable>SELLOENTIDAD FICTICIO REVOCADO</nomCompletResponsable>
-        <nomResponsable>SELLOENTIDAD</nomResponsable>
-        <numeroSerie>1005695</numeroSerie>
-        <oiEuropeu>VATES-A01111111</oiEuropeu>
-        <organitzacio>Ziurtapen eta Zerbitzu Enpresa S.A.</organitzacio>
-        <pais>ES</pais>
-        <primerLlinatgeResponsable>FICTICIO</primerLlinatgeResponsable>
-        <segonLlinatgeResponsable>REVOCADO</segonLlinatgeResponsable>
-        <unitatOrganitzativa>Zigilu elektronikoa - Sello electronico</unitatOrganitzativa>
-        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
-        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
-KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
-        <validDesDe>2021-04-14T16:51:40+02:00</validDesDe>
-        <validFins>2024-04-14T16:51:40+02:00</validFins>
-    </informacioCertificat>
-    <resultatValidacioCodi>-1</resultatValidacioCodi>
-    <resultatValidacioDescripcio>El certificat ha caducat</resultatValidacioDescripcio>
-</resultatValidacio>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.11" class="java.beans.XMLDecoder">
+ <object class="org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio">
+  <void property="informacioCertificat">
+   <object class="org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat" id="InformacioCertificat0">
+    <void property="emissorID">
+     <string>CN=Herritar eta Erakundeen CA - CA de Ciudadanos y Entidades (4),OU=NZZ Ziurtagiri publikoa - Certificado publico SCI,O=IZENPE S.A.,C=ES</string>
+    </void>
+    <void property="emissorOrganitzacio">
+     <string>IZENPE S.A.</string>
+    </void>
+    <void property="entitatSubscriptoraNom">
+     <string>Ziurtapen eta Zerbitzu Enpresa S.A.</string>
+    </void>
+    <void property="llinatgesResponsable">
+     <string>FICTICIO REVOCADO</string>
+    </void>
+    <void property="nifResponsable">
+     <string>99999976R</string>
+    </void>
+    <void property="nomCompletResponsable">
+     <string>SELLOENTIDAD FICTICIO REVOCADO</string>
+    </void>
+    <void property="nomResponsable">
+     <string>SELLOENTIDAD</string>
+    </void>
+    <void property="oiEuropeu">
+     <string>VATES-A01111111</string>
+    </void>
+    <void property="organitzacio">
+     <string>Ziurtapen eta Zerbitzu Enpresa S.A.</string>
+    </void>
+    <void property="pais">
+     <string>ES</string>
+    </void>
+    <void property="primerLlinatgeResponsable">
+     <string>FICTICIO</string>
+    </void>
+    <void property="segonLlinatgeResponsable">
+     <string>REVOCADO</string>
+    </void>
+    <void property="unitatOrganitzativa">
+     <string>Zigilu elektronikoa - Sello electronico</string>
+    </void>
+    <void property="usCertificat">
+     <string>digitalSignature | nonRepudiation | keyEncipherment</string>
+    </void>
+    <void property="usCertificatExtensio">
+     <string>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</string>
+    </void>
+    <void property="validDesDe">
+     <object class="java.util.Date">
+      <long>1618411900000</long>
+     </object>
+    </void>
+    <void property="validFins">
+     <object class="java.util.Date">
+      <long>1713106300000</long>
+     </object>
+    </void>
+    <void id="Integer0" property="classificacio"/>
+   </object>
+  </void>
+  <void property="resultatValidacioCodi">
+   <object idref="Integer0"/>
+  </void>
+  <void property="resultatValidacioDescripcio">
+   <string>El certificat ha caducat</string>
+  </void>
+ </object>
+</java>

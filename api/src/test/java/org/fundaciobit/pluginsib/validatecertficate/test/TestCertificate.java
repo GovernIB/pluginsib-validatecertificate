@@ -1,8 +1,13 @@
 package org.fundaciobit.pluginsib.validatecertficate.test;
 
+import java.beans.XMLDecoder;
+import java.beans.XMLEncoder;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
 import java.util.HashMap;
@@ -10,16 +15,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.PropertyException;
-import javax.xml.bind.Unmarshaller;
-
 import org.fundaciobit.pluginsib.validatecertificate.ICertificatePlugin;
 import org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat;
 import org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio;
 import org.jboss.logging.Logger;
+
 import org.fundaciobit.pluginsib.core.v3.utils.CertificateUtils;
 
 /**
@@ -32,18 +32,12 @@ public class TestCertificate {
     public Logger log = Logger.getLogger(TestCertificate.class);
 
     protected Map<String, InfoResultTest> executeTests(ICertificatePlugin plugin, Properties testProp, File resultsDir,
-            File expectedDir, boolean printResult, boolean stopWhenError)
-            throws JAXBException, Exception, FileNotFoundException, PropertyException {
+            File expectedDir, boolean printResult, boolean stopWhenError) throws Exception, FileNotFoundException {
         String testsStr = testProp.getProperty("tests");
 
         String[] tests = testsStr.split(",");
 
         System.out.println("");
-
-        JAXBContext jaxbContext = JAXBContext.newInstance(ResultatValidacio.class);
-        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
-        Unmarshaller jaxbUnMarshaller = jaxbContext.createUnmarshaller();
 
         Map<String, InfoResultTest> resultats = new HashMap<String, InfoResultTest>();
 
@@ -93,9 +87,12 @@ public class TestCertificate {
                 File file = new File(resultsDir, filename);
 
                 // output pretty printed
-                jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+                //jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-                jaxbMarshaller.marshal(rv, file);
+                XMLEncoder jaxbMarshaller = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(file)));
+
+                jaxbMarshaller.writeObject(rv);
+                jaxbMarshaller.close();
 
                 File expectedFile = new File(expectedDir, filename);
 
@@ -105,7 +102,9 @@ public class TestCertificate {
                 ResultatValidacio expected = null;
                 if (expectedFile.exists()) {
                     // Podem Comparar
-                    expected = (ResultatValidacio) jaxbUnMarshaller.unmarshal(new FileInputStream(expectedFile));
+                    XMLDecoder d = new XMLDecoder(new BufferedInputStream(new FileInputStream(expectedFile)));
+
+                    expected = (ResultatValidacio) d.readObject();
 
                     errorsComparacio = compare(expected, rv);
 
@@ -117,7 +116,6 @@ public class TestCertificate {
                             System.err.println();
                             System.err.println("El resultat del test " + name + " no és l'esperat. Diferències("
                                     + errorsComparacio.length + ") [ esperat | retornat ]: ");
-                                                        
 
                             for (String e : errorsComparacio) {
                                 System.err.println("  + " + e);

@@ -1,29 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<resultatValidacio>
-    <informacioCertificat>
-        <altresValors/>
-        <classificacio>-1</classificacio>
-        <email>PABLO@ANF.ES</email>
-        <emissorID>CN=ANF Assured ID CA1,SERIALNUMBER=G63287510,EMAILADDRESS=info@anf.es,OU=ANF Autoridad Intermedia de Identidad,O=ANF Autoridad de Certificacion,L=Barcelona (see current address at http://www.anf.es/es/address-direccion.html ),ST=Barcelona,C=ES</emissorID>
-        <emissorOrganitzacio>ANF Autoridad de Certificacion</emissorOrganitzacio>
-        <entitatSubscriptoraNom>NOMBRE ORGANIZACION</entitatSubscriptoraNom>
-        <llinatgesResponsable>APELLIDO APELLIDO</llinatgesResponsable>
-        <nifResponsable>H00000000</nifResponsable>
-        <nomCompletResponsable>NOMBRE APELLIDO APELLIDO</nomCompletResponsable>
-        <nomResponsable>NOMBRE</nomResponsable>
-        <numeroSerie>995284634023104768232451379</numeroSerie>
-        <oiEuropeu>VATES-H00000000</oiEuropeu>
-        <organitzacio>NOMBRE ORGANIZACION</organitzacio>
-        <pais>ES</pais>
-        <primerLlinatgeResponsable>APELLIDO</primerLlinatgeResponsable>
-        <segonLlinatgeResponsable>APELLIDO</segonLlinatgeResponsable>
-        <unitatOrganitzativa>Certificado de Representante Legal de Entidad sin personalidad juridica (FIRMA)</unitatOrganitzativa>
-        <usCertificat>digitalSignature | nonRepudiation</usCertificat>
-        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
-KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
-        <validDesDe>2022-09-14T11:01:00+02:00</validDesDe>
-        <validFins>2024-09-13T11:01:00+02:00</validFins>
-    </informacioCertificat>
-    <resultatValidacioCodi>0</resultatValidacioCodi>
-    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
-</resultatValidacio>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.11" class="java.beans.XMLDecoder">
+ <object class="org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio">
+  <void property="informacioCertificat">
+   <object class="org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat">
+    <void property="email">
+     <string>PABLO@ANF.ES</string>
+    </void>
+    <void property="emissorID">
+     <string>CN=ANF Assured ID CA1,SERIALNUMBER=G63287510,EMAILADDRESS=info@anf.es,OU=ANF Autoridad Intermedia de Identidad,O=ANF Autoridad de Certificacion,L=Barcelona (see current address at http://www.anf.es/es/address-direccion.html ),ST=Barcelona,C=ES</string>
+    </void>
+    <void property="emissorOrganitzacio">
+     <string>ANF Autoridad de Certificacion</string>
+    </void>
+    <void property="entitatSubscriptoraNom">
+     <string>NOMBRE ORGANIZACION</string>
+    </void>
+    <void property="llinatgesResponsable">
+     <string>APELLIDO APELLIDO</string>
+    </void>
+    <void property="nifResponsable">
+     <string>H00000000</string>
+    </void>
+    <void property="nomCompletResponsable">
+     <string>NOMBRE APELLIDO APELLIDO</string>
+    </void>
+    <void property="nomResponsable">
+     <string>NOMBRE</string>
+    </void>
+    <void property="oiEuropeu">
+     <string>VATES-H00000000</string>
+    </void>
+    <void property="organitzacio">
+     <string>NOMBRE ORGANIZACION</string>
+    </void>
+    <void property="pais">
+     <string>ES</string>
+    </void>
+    <void property="primerLlinatgeResponsable">
+     <string>APELLIDO</string>
+    </void>
+    <void property="segonLlinatgeResponsable">
+     <string>APELLIDO</string>
+    </void>
+    <void property="unitatOrganitzativa">
+     <string>Certificado de Representante Legal de Entidad sin personalidad juridica (FIRMA)</string>
+    </void>
+    <void property="usCertificat">
+     <string>digitalSignature | nonRepudiation</string>
+    </void>
+    <void property="usCertificatExtensio">
+     <string>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</string>
+    </void>
+    <void property="validDesDe">
+     <object class="java.util.Date">
+      <long>1663146060000</long>
+     </object>
+    </void>
+    <void property="validFins">
+     <object class="java.util.Date">
+      <long>1726218060000</long>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="resultatValidacioDescripcio">
+   <string>OK</string>
+  </void>
+ </object>
+</java>

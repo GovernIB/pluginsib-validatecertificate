@@ -1,27 +1,65 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<resultatValidacio>
-    <informacioCertificat>
-        <altresValors/>
-        <classificacio>-1</classificacio>
-        <emissorID>CN=EAEko HAetako langileen CA - CA personal de AAPP vascas (2),OU=AZZ Ziurtagiri publikoa - Certificado publico SCA,O=IZENPE S.A.,C=ES</emissorID>
-        <emissorOrganitzacio>IZENPE S.A.</emissorOrganitzacio>
-        <entitatSubscriptoraNom>IZENPE S.A.</entitatSubscriptoraNom>
-        <llinatgesResponsable>FICTICIO ACTIVO</llinatgesResponsable>
-        <nifResponsable>99999975T</nifResponsable>
-        <nomCompletResponsable>NUEVOFUNC FICTICIO ACTIVO</nomCompletResponsable>
-        <nomResponsable>NUEVOFUNC</nomResponsable>
-        <numeroSerie>234023</numeroSerie>
-        <organitzacio>IZENPE S.A.</organitzacio>
-        <pais>ES</pais>
-        <primerLlinatgeResponsable>FICTICIO</primerLlinatgeResponsable>
-        <segonLlinatgeResponsable>ACTIVO</segonLlinatgeResponsable>
-        <unitatOrganitzativa> OrganizationUnit= OrganizationUnit= OrganizationUnit=CERTIFICADO ELECTRONICO DE EMPLEADO PUBLICO OrganizationUnit=DEPARTAMENTO OrganizationUnit=DIR3 OrganizationUnit=NIP-001</unitatOrganitzativa>
-        <usCertificat>digitalSignature | nonRepudiation | keyEncipherment</usCertificat>
-        <usCertificatExtensio>KeyPurposeId 0:  TLS Web client authentication
-KeyPurposeId 1:  E-mail protection</usCertificatExtensio>
-        <validDesDe>2022-03-31T14:58:11+02:00</validDesDe>
-        <validFins>2026-03-31T14:58:11+02:00</validFins>
-    </informacioCertificat>
-    <resultatValidacioCodi>0</resultatValidacioCodi>
-    <resultatValidacioDescripcio>OK</resultatValidacioDescripcio>
-</resultatValidacio>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.11" class="java.beans.XMLDecoder">
+ <object class="org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio">
+  <void property="informacioCertificat">
+   <object class="org.fundaciobit.pluginsib.validatecertificate.InformacioCertificat">
+    <void property="emissorID">
+     <string>CN=EAEko HAetako langileen CA - CA personal de AAPP vascas (2),OU=AZZ Ziurtagiri publikoa - Certificado publico SCA,O=IZENPE S.A.,C=ES</string>
+    </void>
+    <void property="emissorOrganitzacio">
+     <string>IZENPE S.A.</string>
+    </void>
+    <void property="entitatSubscriptoraNom">
+     <string>IZENPE S.A.</string>
+    </void>
+    <void property="llinatgesResponsable">
+     <string>FICTICIO ACTIVO</string>
+    </void>
+    <void property="nifResponsable">
+     <string>99999975T</string>
+    </void>
+    <void property="nomCompletResponsable">
+     <string>NUEVOFUNC FICTICIO ACTIVO</string>
+    </void>
+    <void property="nomResponsable">
+     <string>NUEVOFUNC</string>
+    </void>
+    <void property="organitzacio">
+     <string>IZENPE S.A.</string>
+    </void>
+    <void property="pais">
+     <string>ES</string>
+    </void>
+    <void property="primerLlinatgeResponsable">
+     <string>FICTICIO</string>
+    </void>
+    <void property="segonLlinatgeResponsable">
+     <string>ACTIVO</string>
+    </void>
+    <void property="unitatOrganitzativa">
+     <string> OrganizationUnit= OrganizationUnit= OrganizationUnit=CERTIFICADO ELECTRONICO DE EMPLEADO PUBLICO OrganizationUnit=DEPARTAMENTO OrganizationUnit=DIR3 OrganizationUnit=NIP-001</string>
+    </void>
+    <void property="usCertificat">
+     <string>digitalSignature | nonRepudiation | keyEncipherment</string>
+    </void>
+    <void property="usCertificatExtensio">
+     <string>KeyPurposeId 0:  TLS Web client authentication
+KeyPurposeId 1:  E-mail protection</string>
+    </void>
+    <void property="validDesDe">
+     <object class="java.util.Date">
+      <long>1648731491000</long>
+     </object>
+    </void>
+    <void property="validFins">
+     <object class="java.util.Date">
+      <long>1774961891000</long>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="resultatValidacioDescripcio">
+   <string>OK</string>
+  </void>
+ </object>
+</java>

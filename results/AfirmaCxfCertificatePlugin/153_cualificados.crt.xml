@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<resultatValidacio>
-    <resultatValidacioCodi>0</resultatValidacioCodi>
-    <resultatValidacioDescripcio>Validacion Satisfactoria</resultatValidacioDescripcio>
-</resultatValidacio>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.11" class="java.beans.XMLDecoder">
+ <object class="org.fundaciobit.pluginsib.validatecertificate.ResultatValidacio">
+  <void property="resultatValidacioDescripcio">
+   <string>Validacion Satisfactoria</string>
+  </void>
+ </object>
+</java>

@@ -97,7 +97,7 @@ public class FakeTestCertificate extends TestCertificate {
                     } else {
                         //System.err.println(" ERROR: " + res.getError());
                         System.err.println("El resultat del test " + test + " no és l'esperat. Diferències ("
-                                + res.getErrorsComparacio().length + ") : ");
+                                + res.getErrorsComparacio().length + ") [ esperat, retornat ] : ");
                         for (String e : res.getErrorsComparacio()) {
                             System.err.println("  + " + e);
                         }
